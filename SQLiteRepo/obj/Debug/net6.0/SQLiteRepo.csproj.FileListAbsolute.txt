@@ -1,0 +1,15 @@
+d:\prg\DrCost2\SQLiteRepo\bin\Debug\net6.0\SQLiteRepo.deps.json
+d:\prg\DrCost2\SQLiteRepo\bin\Debug\net6.0\SQLiteRepo.dll
+d:\prg\DrCost2\SQLiteRepo\bin\Debug\net6.0\SQLiteRepo.pdb
+d:\prg\DrCost2\SQLiteRepo\obj\Debug\net6.0\SQLiteRepo.csproj.AssemblyReference.cache
+d:\prg\DrCost2\SQLiteRepo\obj\Debug\net6.0\SQLiteRepo.GeneratedMSBuildEditorConfig.editorconfig
+d:\prg\DrCost2\SQLiteRepo\obj\Debug\net6.0\SQLiteRepo.AssemblyInfoInputs.cache
+d:\prg\DrCost2\SQLiteRepo\obj\Debug\net6.0\SQLiteRepo.AssemblyInfo.cs
+d:\prg\DrCost2\SQLiteRepo\obj\Debug\net6.0\SQLiteRepo.csproj.CoreCompileInputs.cache
+d:\prg\DrCost2\SQLiteRepo\obj\Debug\net6.0\SQLiteRepo.dll
+d:\prg\DrCost2\SQLiteRepo\obj\Debug\net6.0\refint\SQLiteRepo.dll
+d:\prg\DrCost2\SQLiteRepo\obj\Debug\net6.0\SQLiteRepo.pdb
+d:\prg\DrCost2\SQLiteRepo\obj\Debug\net6.0\ref\SQLiteRepo.dll
+D:\prg\DrCost2\SQLiteRepo\bin\Debug\net6.0\Core.dll
+D:\prg\DrCost2\SQLiteRepo\bin\Debug\net6.0\Core.pdb
+D:\prg\DrCost2\SQLiteRepo\obj\Debug\net6.0\SQLiteRepo.csproj.CopyComplete
