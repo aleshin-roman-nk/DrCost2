@@ -8,8 +8,9 @@ D:\prg\DrCost2\MockRepo\obj\Debug\net6.0\MockRepo.GeneratedMSBuildEditorConfig.e
 D:\prg\DrCost2\MockRepo\obj\Debug\net6.0\MockRepo.AssemblyInfoInputs.cache
 D:\prg\DrCost2\MockRepo\obj\Debug\net6.0\MockRepo.AssemblyInfo.cs
 D:\prg\DrCost2\MockRepo\obj\Debug\net6.0\MockRepo.csproj.CoreCompileInputs.cache
-D:\prg\DrCost2\MockRepo\obj\Debug\net6.0\MockRepo.csproj.CopyComplete
 D:\prg\DrCost2\MockRepo\obj\Debug\net6.0\MockRepo.dll
 D:\prg\DrCost2\MockRepo\obj\Debug\net6.0\refint\MockRepo.dll
 D:\prg\DrCost2\MockRepo\obj\Debug\net6.0\MockRepo.pdb
 D:\prg\DrCost2\MockRepo\obj\Debug\net6.0\ref\MockRepo.dll
+D:\prg\DrCost2\MockRepo\obj\Debug\net6.0\MockRepo.sourcelink.json
+D:\prg\DrCost2\MockRepo\obj\Debug\net6.0\MockRepo.csproj.Up2Date

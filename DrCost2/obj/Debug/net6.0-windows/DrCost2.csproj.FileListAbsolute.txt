@@ -18,7 +18,6 @@ D:\prg\DrCost2\DrCost2\bin\Debug\net6.0-windows\Unity.Container.dll
 D:\prg\DrCost2\DrCost2\bin\Debug\net6.0-windows\Core.dll
 D:\prg\DrCost2\DrCost2\bin\Debug\net6.0-windows\Core.pdb
 D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.csproj.AssemblyReference.cache
-D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.csproj.CopyComplete
 D:\prg\DrCost2\DrCost2\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
 D:\prg\DrCost2\DrCost2\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\prg\DrCost2\DrCost2\bin\Debug\net6.0-windows\MockRepo.dll
@@ -77,3 +76,5 @@ D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.ProductNameSelectF
 D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.ProductNameForm.resources
 D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.SpendsOnCategoriesForm.resources
 D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.MonthBudgetForm.resources
+D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.sourcelink.json
+D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.csproj.Up2Date

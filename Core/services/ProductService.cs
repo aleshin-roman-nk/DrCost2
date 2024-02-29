@@ -49,7 +49,7 @@ namespace Core.services
 
 		public decimal SpentIn(int year, int month)
 		{
-
+			return 200;
 		}
 
 		public IEnumerable<Product> Get(DateTime dtFrom, DateTime dtTo)

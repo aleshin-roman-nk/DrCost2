@@ -18,8 +18,8 @@ namespace DrCost2.views
 
 		MonthDto[] months = new MonthDto[]
 		{
-			new MonthDto { month = 2, name = "Февраль"},
 			new MonthDto { month = 1, name = "Январь"},
+			new MonthDto { month = 2, name = "Февраль"},
 			new MonthDto { month = 3, name = "Март"},
 			new MonthDto { month = 4, name = "Апрель"},
 			new MonthDto { month = 5, name = "Май"},
@@ -67,7 +67,7 @@ namespace DrCost2.views
 
 		private decimal getSpends(int year, int month /*, int currencyId*/)
 		{
-
+			return 200;
 		}
 
 		private void MonthBudgetForm_FormClosing(object sender, FormClosingEventArgs e)

@@ -9,3 +9,4 @@ D:\prg\DrCost2\Core\obj\Debug\net6.0\Core.dll
 D:\prg\DrCost2\Core\obj\Debug\net6.0\refint\Core.dll
 D:\prg\DrCost2\Core\obj\Debug\net6.0\Core.pdb
 D:\prg\DrCost2\Core\obj\Debug\net6.0\ref\Core.dll
+D:\prg\DrCost2\Core\obj\Debug\net6.0\Core.sourcelink.json
