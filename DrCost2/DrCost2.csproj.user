@@ -4,19 +4,22 @@
     <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="views\MonthBudgetForm.cs">
+    <Compile Update="views\BudgetForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="views\ProductNameForm.cs">
+    <Compile Update="views\CreateBudgetForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="views\ProductNameSelectForm.cs">
+    <Compile Update="views\CreatePaymentsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="views\ProductForm.cs">
+    <Compile Update="views\InputPaymentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="views\SpendsOnCategoriesForm.cs">
+    <Compile Update="views\CreatePaymentSampleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\SelectPaymentSampleForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

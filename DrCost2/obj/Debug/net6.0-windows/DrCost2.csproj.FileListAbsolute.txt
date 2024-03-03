@@ -23,7 +23,6 @@ D:\prg\DrCost2\DrCost2\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyI
 D:\prg\DrCost2\DrCost2\bin\Debug\net6.0-windows\MockRepo.dll
 D:\prg\DrCost2\DrCost2\bin\Debug\net6.0-windows\MockRepo.pdb
 D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.MainForm.resources
-D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.ProductForm.resources
 d:\prg\DrCost2\DrCost2\bin\Debug\net6.0-windows\Microsoft.Data.Sqlite.dll
 d:\prg\DrCost2\DrCost2\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
 d:\prg\DrCost2\DrCost2\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -72,9 +71,11 @@ d:\prg\DrCost2\DrCost2\bin\Debug\net6.0-windows\Humanizer.dll
 d:\prg\DrCost2\DrCost2\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
 d:\prg\DrCost2\DrCost2\bin\Debug\net6.0-windows\Mono.TextTemplating.dll
 d:\prg\DrCost2\DrCost2\bin\Debug\net6.0-windows\AutoMapper.dll
-D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.ProductNameSelectForm.resources
-D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.ProductNameForm.resources
-D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.SpendsOnCategoriesForm.resources
-D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.MonthBudgetForm.resources
 D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.sourcelink.json
 D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.csproj.Up2Date
+D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.BudgetForm.resources
+D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.CreatePaymentSampleForm.resources
+D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.SelectPaymentSampleForm.resources
+D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.CreateBudgetForm.resources
+D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.CreatePaymentsForm.resources
+D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.InputPaymentForm.resources

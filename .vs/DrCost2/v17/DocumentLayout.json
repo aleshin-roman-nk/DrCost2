@@ -3,569 +3,467 @@
   "WorkspaceRootPath": "D:\\prg\\DrCost2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\views\\selectpaymentsampleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\views\\selectpaymentsampleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\services\\productnameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\services\\productnameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\views\\selectpaymentsampleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\views\\selectpaymentsampleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\services\\productcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\services\\productcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\services\\monthmoneyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\services\\monthmoneyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\services\\findingtagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\services\\findingtagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\services\\currencyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\services\\currencyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\views\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\views\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\services\\paymentsamplepageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\services\\paymentsamplepageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|d:\\prg\\drcost2\\sqliterepo\\paymentsamplereposqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|solutionrelative:sqliterepo\\paymentsamplereposqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\views\\productnameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\views\\productnameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\views\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\views\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\views\\monthbudgetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\views\\monthbudgetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\entity\\virtualproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\entity\\virtualproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\entity\\productname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\entity\\productname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|d:\\prg\\drcost2\\sqliterepo\\productreposqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|solutionrelative:sqliterepo\\productreposqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|d:\\prg\\drcost2\\sqliterepo\\appdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|solutionrelative:sqliterepo\\appdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|d:\\prg\\drcost2\\sqliterepo\\ent\\findingtagdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|solutionrelative:sqliterepo\\ent\\findingtagdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\views\\monthbudgetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\views\\monthbudgetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\views\\imonthbudgetview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\views\\imonthbudgetview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\repos\\imonthbudgetrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\repos\\imonthbudgetrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\repos\\icurrencyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\repos\\icurrencyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\entity\\monthbudget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\entity\\monthbudget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\entity\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\entity\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|d:\\prg\\drcost2\\sqliterepo\\ent\\productdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|solutionrelative:sqliterepo\\ent\\productdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\dto\\componeddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\dto\\componeddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\dto\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\dto\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\repos\\irepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\repos\\irepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\entity\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\entity\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|d:\\prg\\drcost2\\sqliterepo\\appdatafactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|solutionrelative:sqliterepo\\appdatafactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|d:\\prg\\drcost2\\sqliterepo\\monthbudgedreposqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|solutionrelative:sqliterepo\\monthbudgedreposqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|d:\\prg\\drcost2\\sqliterepo\\currencyreposqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|solutionrelative:sqliterepo\\currencyreposqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|d:\\prg\\drcost2\\sqliterepo\\ent\\currencydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|solutionrelative:sqliterepo\\ent\\currencydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|D:\\prg\\DrCost2\\drcost2\\views\\budgetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\views\\budgetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|d:\\prg\\drcost2\\sqliterepo\\findingtagreposqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|solutionrelative:sqliterepo\\findingtagreposqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|d:\\prg\\drcost2\\sqliterepo\\ent\\budgetdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|solutionrelative:sqliterepo\\ent\\budgetdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|d:\\prg\\drcost2\\sqliterepo\\ent\\paymentsampledb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|solutionrelative:sqliterepo\\ent\\paymentsampledb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\entity\\paymentsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\entity\\paymentsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\repos\\ifindingtagrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\repos\\ifindingtagrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\repos\\ipaymentsamplerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\repos\\ipaymentsamplerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\views\\iselectpaymentsampleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\views\\iselectpaymentsampleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\views\\inputpaymentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\views\\inputpaymentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\views\\createpaymentsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\views\\createpaymentsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\dto\\enteredpaymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\dto\\enteredpaymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\views\\createpaymentsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\views\\createpaymentsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\views\\budgetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\views\\budgetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\views\\icreatepaymentsview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\views\\icreatepaymentsview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\views\\iinputpaymentview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\views\\iinputpaymentview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|d:\\prg\\drcost2\\drcost2\\views\\inputpaymentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EB79FE94-3644-4016-BE42-98028CC90DDC}|DrCost2\\DrCost2.csproj|solutionrelative:drcost2\\views\\inputpaymentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\entity\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\entity\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\dto\\createbudgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\dto\\createbudgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|d:\\prg\\drcost2\\core\\services\\budgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\services\\budgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\prg\\DrCost2\\sqliterepo\\budgetsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sqliterepo\\budgetsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|d:\\prg\\drcost2\\sqliterepo\\ent\\paymentdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C62F299-6CBA-40D5-88C0-0AD7AC1EEB90}|SQLiteRepo\\SQLiteRepo.csproj|solutionrelative:sqliterepo\\ent\\paymentdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|D:\\prg\\DrCost2\\core\\entity\\budget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9AD88AC-6EE6-494B-BDB6-32FD0B217BA9}|Core\\Core.csproj|solutionrelative:core\\entity\\budget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 323,
+      "VerticalTabListWidth": 226,
       "DocumentGroups": [
         {
-          "DockedWidth": 187,
-          "SelectedChildIndex": 26,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductNameService.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\services\\ProductNameService.cs",
-              "RelativeDocumentMoniker": "Core\\services\\ProductNameService.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\Core\\services\\ProductNameService.cs",
-              "RelativeToolTip": "Core\\services\\ProductNameService.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAzwAAAAAAAAAAA",
+              "DocumentIndex": 8,
+              "Title": "PaymentSampleDb.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\SQLiteRepo\\ent\\PaymentSampleDb.cs",
+              "RelativeDocumentMoniker": "SQLiteRepo\\ent\\PaymentSampleDb.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\SQLiteRepo\\ent\\PaymentSampleDb.cs",
+              "RelativeToolTip": "SQLiteRepo\\ent\\PaymentSampleDb.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T02:44:07.244Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductCategoryService.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\services\\ProductCategoryService.cs",
-              "RelativeDocumentMoniker": "Core\\services\\ProductCategoryService.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\Core\\services\\ProductCategoryService.cs",
-              "RelativeToolTip": "Core\\services\\ProductCategoryService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T02:44:05.561Z",
+              "WhenOpened": "2024-03-03T11:30:24.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "FindingTagService.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\services\\FindingTagService.cs",
-              "RelativeDocumentMoniker": "Core\\services\\FindingTagService.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\Core\\services\\FindingTagService.cs",
-              "RelativeToolTip": "Core\\services\\FindingTagService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "PaymentSampleRepoSqlite.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\SQLiteRepo\\PaymentSampleRepoSqlite.cs",
+              "RelativeDocumentMoniker": "SQLiteRepo\\PaymentSampleRepoSqlite.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\SQLiteRepo\\PaymentSampleRepoSqlite.cs",
+              "RelativeToolTip": "SQLiteRepo\\PaymentSampleRepoSqlite.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAswDYAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T02:43:58.71Z",
+              "WhenOpened": "2024-03-03T11:29:52.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ProductForm.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\views\\ProductForm.cs",
-              "RelativeDocumentMoniker": "DrCost2\\views\\ProductForm.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\views\\ProductForm.cs",
-              "RelativeToolTip": "DrCost2\\views\\ProductForm.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAowGMAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T19:05:04.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ProductNameForm.cs [Design]",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\views\\ProductNameForm.cs",
-              "RelativeDocumentMoniker": "DrCost2\\views\\ProductNameForm.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\views\\ProductNameForm.cs [Design]",
-              "RelativeToolTip": "DrCost2\\views\\ProductNameForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T15:03:16.603Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ProductForm.cs [Design]",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\views\\ProductForm.cs",
-              "RelativeDocumentMoniker": "DrCost2\\views\\ProductForm.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\views\\ProductForm.cs [Design]",
-              "RelativeToolTip": "DrCost2\\views\\ProductForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T15:03:12.228Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ProductName.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\entity\\ProductName.cs",
-              "RelativeDocumentMoniker": "Core\\entity\\ProductName.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\Core\\entity\\ProductName.cs",
-              "RelativeToolTip": "Core\\entity\\ProductName.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T14:45:59.49Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "VirtualProduct.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\entity\\VirtualProduct.cs",
-              "RelativeDocumentMoniker": "Core\\entity\\VirtualProduct.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\Core\\entity\\VirtualProduct.cs",
-              "RelativeToolTip": "Core\\entity\\VirtualProduct.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-13T06:34:10.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "MonthBudgedRepoSQLite.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\SQLiteRepo\\MonthBudgedRepoSQLite.cs",
-              "RelativeDocumentMoniker": "SQLiteRepo\\MonthBudgedRepoSQLite.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\SQLiteRepo\\MonthBudgedRepoSQLite.cs",
-              "RelativeToolTip": "SQLiteRepo\\MonthBudgedRepoSQLite.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T14:28:18.766Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MonthBudgetForm.cs [Design]",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\views\\MonthBudgetForm.cs",
-              "RelativeDocumentMoniker": "DrCost2\\views\\MonthBudgetForm.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\views\\MonthBudgetForm.cs [Design]",
-              "RelativeToolTip": "DrCost2\\views\\MonthBudgetForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-11T15:34:17.643Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MonthBudgetForm.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\views\\MonthBudgetForm.cs",
-              "RelativeDocumentMoniker": "DrCost2\\views\\MonthBudgetForm.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\views\\MonthBudgetForm.cs",
-              "RelativeToolTip": "DrCost2\\views\\MonthBudgetForm.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAIBBwBUAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-11T15:16:32.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IMonthBudgetView.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\views\\IMonthBudgetView.cs",
-              "RelativeDocumentMoniker": "DrCost2\\views\\IMonthBudgetView.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\views\\IMonthBudgetView.cs",
-              "RelativeToolTip": "DrCost2\\views\\IMonthBudgetView.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-11T15:16:11.427Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "MonthBudget.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\entity\\MonthBudget.cs",
-              "RelativeDocumentMoniker": "Core\\entity\\MonthBudget.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\Core\\entity\\MonthBudget.cs",
-              "RelativeToolTip": "Core\\entity\\MonthBudget.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-11T09:59:16.219Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IMonthBudgetRepo.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\repos\\IMonthBudgetRepo.cs",
-              "RelativeDocumentMoniker": "Core\\repos\\IMonthBudgetRepo.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\Core\\repos\\IMonthBudgetRepo.cs",
-              "RelativeToolTip": "Core\\repos\\IMonthBudgetRepo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-11T09:58:55.801Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MonthMoneyService.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\services\\MonthMoneyService.cs",
-              "RelativeDocumentMoniker": "Core\\services\\MonthMoneyService.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\Core\\services\\MonthMoneyService.cs",
-              "RelativeToolTip": "Core\\services\\MonthMoneyService.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAewBAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-11T09:54:09.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ComponedDto.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\Dto\\ComponedDto.cs",
-              "RelativeDocumentMoniker": "DrCost2\\Dto\\ComponedDto.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\Dto\\ComponedDto.cs",
-              "RelativeToolTip": "DrCost2\\Dto\\ComponedDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-10T19:38:16.183Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\MainForm.cs",
-              "RelativeDocumentMoniker": "DrCost2\\MainForm.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\MainForm.cs [Design]",
-              "RelativeToolTip": "DrCost2\\MainForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-10T18:46:10.878Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CurrencyService.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\services\\CurrencyService.cs",
-              "RelativeDocumentMoniker": "Core\\services\\CurrencyService.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\Core\\services\\CurrencyService.cs",
-              "RelativeToolTip": "Core\\services\\CurrencyService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-10T18:18:18.853Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "CurrencyRepoSQLite.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\SQLiteRepo\\CurrencyRepoSQLite.cs",
-              "RelativeDocumentMoniker": "SQLiteRepo\\CurrencyRepoSQLite.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\SQLiteRepo\\CurrencyRepoSQLite.cs",
-              "RelativeToolTip": "SQLiteRepo\\CurrencyRepoSQLite.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T14:28:18.793Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "IRepo.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\repos\\IRepo.cs",
-              "RelativeDocumentMoniker": "Core\\repos\\IRepo.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\Core\\repos\\IRepo.cs",
-              "RelativeToolTip": "Core\\repos\\IRepo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-10T18:11:05.268Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ICurrencyRepo.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\repos\\ICurrencyRepo.cs",
-              "RelativeDocumentMoniker": "Core\\repos\\ICurrencyRepo.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\Core\\repos\\ICurrencyRepo.cs",
-              "RelativeToolTip": "Core\\repos\\ICurrencyRepo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-10T18:10:39.398Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Currency.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\entity\\Currency.cs",
-              "RelativeDocumentMoniker": "Core\\entity\\Currency.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\Core\\entity\\Currency.cs",
-              "RelativeToolTip": "Core\\entity\\Currency.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-10T18:09:46.95Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "CurrencyDb.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\SQLiteRepo\\ent\\CurrencyDb.cs",
-              "RelativeDocumentMoniker": "SQLiteRepo\\ent\\CurrencyDb.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\SQLiteRepo\\ent\\CurrencyDb.cs",
-              "RelativeToolTip": "SQLiteRepo\\ent\\CurrencyDb.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T14:28:18.804Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\MainForm.cs",
-              "RelativeDocumentMoniker": "DrCost2\\MainForm.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\MainForm.cs",
-              "RelativeToolTip": "DrCost2\\MainForm.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAArwHIAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-10T14:40:46.598Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\entity\\Product.cs",
-              "RelativeDocumentMoniker": "Core\\entity\\Product.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\Core\\entity\\Product.cs",
-              "RelativeToolTip": "Core\\entity\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-10T14:00:37.277Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
               "Title": "FindingTagRepoSQLite.cs",
               "DocumentMoniker": "D:\\prg\\DrCost2\\SQLiteRepo\\FindingTagRepoSQLite.cs",
               "RelativeDocumentMoniker": "SQLiteRepo\\FindingTagRepoSQLite.cs",
               "ToolTip": "D:\\prg\\DrCost2\\SQLiteRepo\\FindingTagRepoSQLite.cs",
               "RelativeToolTip": "SQLiteRepo\\FindingTagRepoSQLite.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T14:28:18.812Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\services\\ProductService.cs",
-              "RelativeDocumentMoniker": "Core\\services\\ProductService.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\Core\\services\\ProductService.cs",
-              "RelativeToolTip": "Core\\services\\ProductService.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAADgvzIAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-06T10:28:18.099Z",
+              "WhenOpened": "2024-03-03T11:28:48.919Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FindingTagDb.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\SQLiteRepo\\ent\\FindingTagDb.cs",
-              "RelativeDocumentMoniker": "SQLiteRepo\\ent\\FindingTagDb.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\SQLiteRepo\\ent\\FindingTagDb.cs",
-              "RelativeToolTip": "SQLiteRepo\\ent\\FindingTagDb.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "DocumentIndex": 10,
+              "Title": "IFindingTagRepo.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\repos\\IFindingTagRepo.cs",
+              "RelativeDocumentMoniker": "Core\\repos\\IFindingTagRepo.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\Core\\repos\\IFindingTagRepo.cs",
+              "RelativeToolTip": "Core\\repos\\IFindingTagRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-05T14:44:07.092Z"
+              "WhenOpened": "2024-03-03T11:27:25.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IPaymentSampleRepo.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\repos\\IPaymentSampleRepo.cs",
+              "RelativeDocumentMoniker": "Core\\repos\\IPaymentSampleRepo.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\Core\\repos\\IPaymentSampleRepo.cs",
+              "RelativeToolTip": "Core\\repos\\IPaymentSampleRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T11:27:09.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PaymentSamplePageService.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\services\\PaymentSamplePageService.cs",
+              "RelativeDocumentMoniker": "Core\\services\\PaymentSamplePageService.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\Core\\services\\PaymentSamplePageService.cs",
+              "RelativeToolTip": "Core\\services\\PaymentSamplePageService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T11:14:49.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SelectPaymentSampleForm.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\views\\SelectPaymentSampleForm.cs",
+              "RelativeDocumentMoniker": "DrCost2\\views\\SelectPaymentSampleForm.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\views\\SelectPaymentSampleForm.cs",
+              "RelativeToolTip": "DrCost2\\views\\SelectPaymentSampleForm.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAowCwAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T11:05:16.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SelectPaymentSampleForm.cs [Design]",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\views\\SelectPaymentSampleForm.cs",
+              "RelativeDocumentMoniker": "DrCost2\\views\\SelectPaymentSampleForm.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\views\\SelectPaymentSampleForm.cs [Design]",
+              "RelativeToolTip": "DrCost2\\views\\SelectPaymentSampleForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T11:05:02.073Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ISelectPaymentSampleView.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\views\\ISelectPaymentSampleView.cs",
+              "RelativeDocumentMoniker": "DrCost2\\views\\ISelectPaymentSampleView.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\views\\ISelectPaymentSampleView.cs",
+              "RelativeToolTip": "DrCost2\\views\\ISelectPaymentSampleView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T11:04:56.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PaymentSample.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\entity\\PaymentSample.cs",
+              "RelativeDocumentMoniker": "Core\\entity\\PaymentSample.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\Core\\entity\\PaymentSample.cs",
+              "RelativeToolTip": "Core\\entity\\PaymentSample.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T10:52:10.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IInputPaymentView.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\views\\IInputPaymentView.cs",
+              "RelativeDocumentMoniker": "DrCost2\\views\\IInputPaymentView.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\views\\IInputPaymentView.cs",
+              "RelativeToolTip": "DrCost2\\views\\IInputPaymentView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T10:44:20.611Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "ProductRepoSQLite.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\SQLiteRepo\\ProductRepoSQLite.cs",
-              "RelativeDocumentMoniker": "SQLiteRepo\\ProductRepoSQLite.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\SQLiteRepo\\ProductRepoSQLite.cs",
-              "RelativeToolTip": "SQLiteRepo\\ProductRepoSQLite.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Title": "EnteredPaymentDto.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\Dto\\EnteredPaymentDto.cs",
+              "RelativeDocumentMoniker": "DrCost2\\Dto\\EnteredPaymentDto.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\Dto\\EnteredPaymentDto.cs",
+              "RelativeToolTip": "DrCost2\\Dto\\EnteredPaymentDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-05T09:14:01.845Z"
+              "WhenOpened": "2024-03-03T10:43:54.386Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "AppDataFactory.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\SQLiteRepo\\AppDataFactory.cs",
-              "RelativeDocumentMoniker": "SQLiteRepo\\AppDataFactory.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\SQLiteRepo\\AppDataFactory.cs",
-              "RelativeToolTip": "SQLiteRepo\\AppDataFactory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "DocumentIndex": 22,
+              "Title": "CreateBudgetDto.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\dto\\CreateBudgetDto.cs",
+              "RelativeDocumentMoniker": "Core\\dto\\CreateBudgetDto.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\Core\\dto\\CreateBudgetDto.cs",
+              "RelativeToolTip": "Core\\dto\\CreateBudgetDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-05T09:06:12.595Z"
+              "WhenOpened": "2024-03-03T10:36:20.716Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ProductDb.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\SQLiteRepo\\ent\\ProductDb.cs",
-              "RelativeDocumentMoniker": "SQLiteRepo\\ent\\ProductDb.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\SQLiteRepo\\ent\\ProductDb.cs",
-              "RelativeToolTip": "SQLiteRepo\\ent\\ProductDb.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-04T15:55:22.435Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AppData.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\SQLiteRepo\\AppData.cs",
-              "RelativeDocumentMoniker": "SQLiteRepo\\AppData.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\SQLiteRepo\\AppData.cs",
-              "RelativeToolTip": "SQLiteRepo\\AppData.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAwBgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-04T14:44:26.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "CreateProductDto.cs",
-              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\Dto\\CreateProductDto.cs",
-              "RelativeDocumentMoniker": "DrCost2\\Dto\\CreateProductDto.cs",
-              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\Dto\\CreateProductDto.cs",
-              "RelativeToolTip": "DrCost2\\Dto\\CreateProductDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-02T19:52:54.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\Program.cs",
               "RelativeDocumentMoniker": "DrCost2\\Program.cs",
               "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\Program.cs",
               "RelativeToolTip": "DrCost2\\Program.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAtwCwAAAA2AAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAQwD0AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-01T17:39:04.484Z",
+              "WhenOpened": "2024-03-03T10:16:18.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreatePaymentsForm.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\views\\CreatePaymentsForm.cs",
+              "RelativeDocumentMoniker": "DrCost2\\views\\CreatePaymentsForm.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\views\\CreatePaymentsForm.cs",
+              "RelativeToolTip": "DrCost2\\views\\CreatePaymentsForm.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAywB4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T10:11:09.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreatePaymentsForm.cs [Design]",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\views\\CreatePaymentsForm.cs",
+              "RelativeDocumentMoniker": "DrCost2\\views\\CreatePaymentsForm.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\views\\CreatePaymentsForm.cs [Design]",
+              "RelativeToolTip": "DrCost2\\views\\CreatePaymentsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T10:06:25.892Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ICreatePaymentsView.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\views\\ICreatePaymentsView.cs",
+              "RelativeDocumentMoniker": "DrCost2\\views\\ICreatePaymentsView.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\views\\ICreatePaymentsView.cs",
+              "RelativeToolTip": "DrCost2\\views\\ICreatePaymentsView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T10:06:05.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "InputPaymentForm.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\views\\InputPaymentForm.cs",
+              "RelativeDocumentMoniker": "DrCost2\\views\\InputPaymentForm.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\views\\InputPaymentForm.cs",
+              "RelativeToolTip": "DrCost2\\views\\InputPaymentForm.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T10:05:35.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "InputPaymentForm.cs [Design]",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\views\\InputPaymentForm.cs",
+              "RelativeDocumentMoniker": "DrCost2\\views\\InputPaymentForm.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\views\\InputPaymentForm.cs [Design]",
+              "RelativeToolTip": "DrCost2\\views\\InputPaymentForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T10:01:19.117Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BudgetService.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\services\\BudgetService.cs",
+              "RelativeDocumentMoniker": "Core\\services\\BudgetService.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\Core\\services\\BudgetService.cs",
+              "RelativeToolTip": "Core\\services\\BudgetService.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABIAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T08:36:27.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PaymentDb.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\SQLiteRepo\\ent\\PaymentDb.cs",
+              "RelativeDocumentMoniker": "SQLiteRepo\\ent\\PaymentDb.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\SQLiteRepo\\ent\\PaymentDb.cs",
+              "RelativeToolTip": "SQLiteRepo\\ent\\PaymentDb.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T08:14:28.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BudgetDb.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\SQLiteRepo\\ent\\BudgetDb.cs",
+              "RelativeDocumentMoniker": "SQLiteRepo\\ent\\BudgetDb.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\SQLiteRepo\\ent\\BudgetDb.cs",
+              "RelativeToolTip": "SQLiteRepo\\ent\\BudgetDb.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T08:00:42.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BudgetsRepo.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\SQLiteRepo\\BudgetsRepo.cs",
+              "RelativeDocumentMoniker": "SQLiteRepo\\BudgetsRepo.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\SQLiteRepo\\BudgetsRepo.cs",
+              "RelativeToolTip": "SQLiteRepo\\BudgetsRepo.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAswC8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T07:34:02.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\entity\\Payment.cs",
+              "RelativeDocumentMoniker": "Core\\entity\\Payment.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\Core\\entity\\Payment.cs",
+              "RelativeToolTip": "Core\\entity\\Payment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T07:33:38.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Budget.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\Core\\entity\\Budget.cs",
+              "RelativeDocumentMoniker": "Core\\entity\\Budget.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\Core\\entity\\Budget.cs",
+              "RelativeToolTip": "Core\\entity\\Budget.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T07:30:44.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BudgetForm.cs [Design]",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\views\\BudgetForm.cs",
+              "RelativeDocumentMoniker": "DrCost2\\views\\BudgetForm.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\views\\BudgetForm.cs [Design]",
+              "RelativeToolTip": "DrCost2\\views\\BudgetForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T07:21:41.816Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BudgetForm.cs",
+              "DocumentMoniker": "D:\\prg\\DrCost2\\DrCost2\\views\\BudgetForm.cs",
+              "RelativeDocumentMoniker": "DrCost2\\views\\BudgetForm.cs",
+              "ToolTip": "D:\\prg\\DrCost2\\DrCost2\\views\\BudgetForm.cs",
+              "RelativeToolTip": "DrCost2\\views\\BudgetForm.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAIAzwHgAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T05:58:23.189Z",
               "EditorCaption": ""
             }
           ]

@@ -4,8 +4,8 @@ using Core.services;
 using DrCost2.views;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using MockRepo;
 using SQLiteRepo;
+using DrCost2.Helpers;
 
 namespace DrCost2
 {
@@ -38,26 +38,30 @@ namespace DrCost2
 				.AddDbContext<AppData>(options =>
 					options.UseSqlite("Data Source=..\\..\\db\\report.sqlite"))
 
-				.AddSingleton<IProductRepo, ProductRepoSQLite>()
-				.AddSingleton<IProductNameRepo, ProductNameRepoSqlite>()
+				.AddSingleton<IPaymentRepo, PaymentRepoSQLite>()
+				.AddSingleton<IPaymentSampleRepo, PaymentSampleRepoSqlite>()
 				.AddSingleton<IFindingTagRepo, FindingTagRepoSQLite>()
-				.AddSingleton<ICategoryRepo, ProductCategoryRepoSQLite>()
-				.AddSingleton<ICurrencyRepo, CurrencyRepoSQLite>()
-				.AddSingleton<IMonthBudgetRepo, MonthBudgedRepoSQLite>()
+				.AddSingleton<IPaymentCategoryRepo, PaymentCategoryRepoSQLite>()
+				.AddSingleton<IBudgetRepo, BudgetsRepo>()
 
 				.AddSingleton<MainForm>()
-				.AddSingleton<IProductView, ProductForm>()
-				.AddSingleton<IProductNameSelectView, ProductNameSelectForm>()
-				.AddSingleton<IProductNameView, ProductNameForm>()
-				.AddSingleton<ISpendsOnCategoriesView, SpendsOnCategoriesForm>()
-				.AddSingleton<IMonthBudgetView, MonthBudgetForm>()
+				.AddSingleton<IInputPaymentView, InputPaymentForm>()
+				.AddSingleton<ISelectPaymentSampleView, SelectPaymentSampleForm>()
+				.AddSingleton<ICreatePaymentSampleView, CreatePaymentSampleForm>()
+				.AddSingleton<IBudgetView, BudgetForm>()
+				.AddSingleton<ICreateBudgetView, CreateBudgetForm>()
+				.AddSingleton<IInputPaymentView, InputPaymentForm>()
+				.AddSingleton<ICreatePaymentsView, CreatePaymentsForm>()
 
-				.AddSingleton<ProductService>()
-				.AddSingleton<ProductNameService>()
-				.AddSingleton<ProductCategoryService>()
-				.AddSingleton<CurrencyService>()
-				.AddSingleton<MonthMoneyService>()
-				.AddSingleton<FindingTagService>();
+				//.AddSingleton<ProductService>()
+				//.AddSingleton<ProductNameService>()
+				//.AddSingleton<ProductCategoryService>()
+				//.AddSingleton<CurrencyService>()
+				//.AddSingleton<MonthMoneyService>()
+				//.AddSingleton<FindingTagService>()
+				.AddSingleton<BudgetService>()
+				.AddSingleton<PaymentSamplePageService>()
+				.AddSingleton<MonthsProvider>();
 
 			return services.BuildServiceProvider();
 		}

@@ -15,10 +15,18 @@ namespace SQLiteRepo
 			
 		}
 
-		public DbSet<ProductCategoryDb> ProductCategories { get; set; }
-		public DbSet<ProductDb> Products { get; set; }
-		public DbSet<ProductNameDb> ProductNames { get; set; }
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
+		{
+			modelBuilder.Entity<BudgetDb>()
+				.HasMany(b => b.Payments)
+				.WithOne() // Assuming PaymentDb does not have a navigation property back to BudgetDb
+				.HasForeignKey(p => p.budgetId); // Replace YourForeignKeyPropertyName with the actual name of the foreign key property in PaymentDb
+		}
+
+		public DbSet<PaymentCategoryDb> PaymentCategories { get; set; }
+		public DbSet<PaymentDb> Payments { get; set; }
+		public DbSet<PaymentSampleDb> PaymentSamples { get; set; }
 		public DbSet<FindingTagDb> FindingTags { get; set; }
-		public DbSet<CurrencyDb> Currencies { get; set; }
+		public DbSet<BudgetDb> Budgets { get; set; }
 	}
 }
