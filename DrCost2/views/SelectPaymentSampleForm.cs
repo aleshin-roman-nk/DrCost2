@@ -17,47 +17,44 @@ namespace DrCost2.views
 {
 	public partial class SelectPaymentSampleForm : Form, ISelectPaymentSampleView
 	{
-		private readonly PaymentSamplePageService paymentSamplePageService;
-		private readonly ICreatePaymentSampleView productNameView;
+		private readonly PaymentSampleService paymentSampleService;
+		private readonly FindingTagService findingTagService;
+		private readonly ICreatePaymentSampleView createPaymentSampleView;
 
 		public event EventHandler<PaymentSample> Completed;
 
 		FindingTag selectedTag { get; set; }
-		PaymentSample selectedProductName { get; set; }
+		PaymentSample selectedPaymentSample { get; set; }
 
-		List<PaymentSample> productNames { get; } = new List<PaymentSample>();
+		List<PaymentSample> paymentSamples { get; } = new List<PaymentSample>();
 
 		public SelectPaymentSampleForm(
-			//ProductNameService productNameService,
-			//ProductCategoryService productCategoryService,
-			PaymentSamplePageService paymentSamplePageService,
+			PaymentSampleService paymentSampleService,
+			FindingTagService findingTagService,
 			ICreatePaymentSampleView createPaymentSampleView
 			)
 		{
 			InitializeComponent();
-			this.paymentSamplePageService = paymentSamplePageService;
-			//this.productNameService = productNameService;
-			//this.findingTagService = findingTagService;
-			this.productNameView = createPaymentSampleView;
+			this.paymentSampleService = paymentSampleService;
+			this.findingTagService = findingTagService;
+			this.createPaymentSampleView = createPaymentSampleView;
 
-			this.productNameView.Completed += ProductNameView_Completed;
+			this.createPaymentSampleView.Completed += createPaymentSampleView_Completed;
 
-			//productNames.AddRange(productNameService.GetAll());
+			paymentSamples.AddRange(paymentSampleService.GetPaymentSamples());
 
-			listBoxFindingTags.DataSource = paymentSamplePageService.GetFindingTags();
+			listBoxFindingTags.DataSource = findingTagService.GetAll();
 			listBoxFindingTags.DisplayMember = "name";
 
-			//updateProductNameListView(productNameService.GetAll());
-			filterProductNames(listBoxFindingTags.SelectedItem as FindingTag);
+			filterPaymentSample(listBoxFindingTags.SelectedItem as FindingTag);
 
-			selectedProductName = getSelectedProductName();
+			selectedPaymentSample = getSelectedPaymentSample();
 		}
 
-		private void ProductNameView_Completed(object? sender, PaymentSample e)
+		private void createPaymentSampleView_Completed(object? sender, PaymentSample e)
 		{
-			//pushProductName(e);
-			productNames.Add(e);
-			filterProductNames(selectedTag);
+			paymentSamples.Add(e);
+			filterPaymentSample(selectedTag);
 		}
 
 		private void ChangeSelectedFindingTag()
@@ -70,7 +67,7 @@ namespace DrCost2.views
 				// Use the selected item - displaying it in a message box here
 				textCategory.Text = selectedTag?.name;
 
-				filterProductNames(selectedTag);
+				filterPaymentSample(selectedTag);
 			}
 			else
 			{
@@ -99,29 +96,29 @@ namespace DrCost2.views
 
 		private void btnAddProductName_Click(object sender, EventArgs e)
 		{
-			productNameView.ShowDialog();
+			createPaymentSampleView.ShowDialog();
 		}
 
-		private void listViewProductNames_SelectedIndexChanged(object sender, EventArgs e)
+		private void listViewPaymentSamples_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			selectedProductName = getSelectedProductName();
+			selectedPaymentSample = getSelectedPaymentSample();
 
-			if (selectedProductName == null) return;
+			if (selectedPaymentSample == null) return;
 
-			textProductName.Text = selectedProductName.name;
-			textProductName.Tag = selectedProductName;
+			textProductName.Text = selectedPaymentSample.name;
+			textProductName.Tag = selectedPaymentSample;
 		}
 
-		private void listViewProductNames_MouseDoubleClick(object sender, MouseEventArgs e)
+		private void listViewPaymentSamples_MouseDoubleClick(object sender, MouseEventArgs e)
 		{
-			if (selectedProductName == null) return;
+			if (selectedPaymentSample == null) return;
 
-			Completed?.Invoke(this, selectedProductName);
+			Completed?.Invoke(this, selectedPaymentSample);
 
 			this.Hide();
 		}
 
-		PaymentSample? getSelectedProductName()
+		PaymentSample? getSelectedPaymentSample()
 		{
 			if (lvPaymentSamples.SelectedItems.Count > 0)
 			{
@@ -138,9 +135,9 @@ namespace DrCost2.views
 			ChangeSelectedFindingTag();
 		}
 
-		private void filterProductNames(FindingTag findingTag)
+		private void filterPaymentSample(FindingTag findingTag)
 		{
-			var pNames = productNames.Where(x => x.findingTag.id == findingTag.id).ToArray();
+			var pNames = paymentSamples.Where(x => x.findingTag.id == findingTag.id).ToArray();
 
 			lvPaymentSamples.Clear();
 

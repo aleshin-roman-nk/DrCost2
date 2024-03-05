@@ -35,7 +35,7 @@
 			label2 = new Label();
 			label3 = new Label();
 			btnAccept = new Button();
-			button2 = new Button();
+			btnCancel = new Button();
 			SuspendLayout();
 			// 
 			// cbCategory
@@ -44,14 +44,14 @@
 			cbCategory.FormattingEnabled = true;
 			cbCategory.Location = new Point(12, 128);
 			cbCategory.Name = "cbCategory";
-			cbCategory.Size = new Size(406, 36);
+			cbCategory.Size = new Size(406, 29);
 			cbCategory.TabIndex = 0;
 			// 
 			// textProductName
 			// 
 			textProductName.Location = new Point(12, 40);
 			textProductName.Name = "textProductName";
-			textProductName.Size = new Size(406, 34);
+			textProductName.Size = new Size(406, 29);
 			textProductName.TabIndex = 1;
 			// 
 			// cbFindingTag
@@ -60,7 +60,7 @@
 			cbFindingTag.FormattingEnabled = true;
 			cbFindingTag.Location = new Point(12, 226);
 			cbFindingTag.Name = "cbFindingTag";
-			cbFindingTag.Size = new Size(406, 36);
+			cbFindingTag.Size = new Size(406, 29);
 			cbFindingTag.TabIndex = 2;
 			// 
 			// label1
@@ -68,7 +68,7 @@
 			label1.AutoSize = true;
 			label1.Location = new Point(12, 9);
 			label1.Name = "label1";
-			label1.Size = new Size(151, 28);
+			label1.Size = new Size(117, 21);
 			label1.TabIndex = 3;
 			label1.Text = "Наименование";
 			// 
@@ -78,7 +78,7 @@
 			label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
 			label2.Location = new Point(12, 97);
 			label2.Name = "label2";
-			label2.Size = new Size(137, 28);
+			label2.Size = new Size(107, 21);
 			label2.TabIndex = 4;
 			label2.Text = "Категория *";
 			// 
@@ -87,7 +87,7 @@
 			label3.AutoSize = true;
 			label3.Location = new Point(12, 195);
 			label3.Name = "label3";
-			label3.Size = new Size(147, 28);
+			label3.Size = new Size(115, 21);
 			label3.TabIndex = 5;
 			label3.Text = "Тег для поиска";
 			// 
@@ -101,22 +101,22 @@
 			btnAccept.UseVisualStyleBackColor = true;
 			btnAccept.Click += btnAccept_Click;
 			// 
-			// button2
+			// btnCancel
 			// 
-			button2.Location = new Point(267, 295);
-			button2.Name = "button2";
-			button2.Size = new Size(151, 56);
-			button2.TabIndex = 7;
-			button2.Text = "Отмена";
-			button2.UseVisualStyleBackColor = true;
-			button2.Click += button2_Click;
+			btnCancel.Location = new Point(267, 295);
+			btnCancel.Name = "btnCancel";
+			btnCancel.Size = new Size(151, 56);
+			btnCancel.TabIndex = 7;
+			btnCancel.Text = "Отмена";
+			btnCancel.UseVisualStyleBackColor = true;
+			btnCancel.Click += btnCancel_Click;
 			// 
-			// ProductNameForm
+			// CreatePaymentSampleForm
 			// 
-			AutoScaleDimensions = new SizeF(11F, 28F);
+			AutoScaleDimensions = new SizeF(9F, 21F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(432, 378);
-			Controls.Add(button2);
+			Controls.Add(btnCancel);
 			Controls.Add(btnAccept);
 			Controls.Add(label3);
 			Controls.Add(label2);
@@ -128,7 +128,7 @@
 			FormBorderStyle = FormBorderStyle.FixedDialog;
 			Margin = new Padding(4);
 			MaximizeBox = false;
-			Name = "ProductNameForm";
+			Name = "CreatePaymentSampleForm";
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "ProductNameForm";
 			FormClosing += ProductNameForm_FormClosing;
@@ -145,6 +145,6 @@
 		private Label label2;
 		private Label label3;
 		private Button btnAccept;
-		private Button button2;
+		private Button btnCancel;
 	}
 }

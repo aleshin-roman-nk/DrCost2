@@ -1,0 +1,16 @@
+D:\prg\DrCost2\MockRepo\bin\Release\net6.0\MockRepo.deps.json
+D:\prg\DrCost2\MockRepo\bin\Release\net6.0\MockRepo.dll
+D:\prg\DrCost2\MockRepo\bin\Release\net6.0\MockRepo.pdb
+D:\prg\DrCost2\MockRepo\bin\Release\net6.0\Core.dll
+D:\prg\DrCost2\MockRepo\bin\Release\net6.0\Core.pdb
+D:\prg\DrCost2\MockRepo\obj\Release\net6.0\MockRepo.csproj.AssemblyReference.cache
+D:\prg\DrCost2\MockRepo\obj\Release\net6.0\MockRepo.GeneratedMSBuildEditorConfig.editorconfig
+D:\prg\DrCost2\MockRepo\obj\Release\net6.0\MockRepo.AssemblyInfoInputs.cache
+D:\prg\DrCost2\MockRepo\obj\Release\net6.0\MockRepo.AssemblyInfo.cs
+D:\prg\DrCost2\MockRepo\obj\Release\net6.0\MockRepo.csproj.CoreCompileInputs.cache
+D:\prg\DrCost2\MockRepo\obj\Release\net6.0\MockRepo.sourcelink.json
+D:\prg\DrCost2\MockRepo\obj\Release\net6.0\MockRepo.csproj.Up2Date
+D:\prg\DrCost2\MockRepo\obj\Release\net6.0\MockRepo.dll
+D:\prg\DrCost2\MockRepo\obj\Release\net6.0\refint\MockRepo.dll
+D:\prg\DrCost2\MockRepo\obj\Release\net6.0\MockRepo.pdb
+D:\prg\DrCost2\MockRepo\obj\Release\net6.0\ref\MockRepo.dll

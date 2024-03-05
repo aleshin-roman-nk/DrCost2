@@ -12,6 +12,6 @@ namespace Core.entity
         public int id { get; set; }
         public string? name { get; set; }
         public PaymentCategory? category { get; set; }
-        public FindingTag findingTag { get; set; }
+        public FindingTag? findingTag { get; set; }
     }
 }

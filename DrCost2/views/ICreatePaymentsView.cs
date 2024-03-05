@@ -9,6 +9,6 @@ namespace DrCost2.views
 	public interface ICreatePaymentsView
 	{
 		void ShowModal(int budgetId);
-		event EventHandler<bool> Completed;
+		event EventHandler PaymentsChanged;
 	}
 }

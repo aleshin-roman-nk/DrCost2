@@ -16,5 +16,6 @@ namespace Core.entity
 		public DateTime Date { get; set; }
 		public decimal sum => price * count;
 		public string? categoryName { get; set; }
-    }
+		//public bool committed { get; set; }
+	}
 }

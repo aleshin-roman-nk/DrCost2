@@ -34,6 +34,8 @@ namespace DrCost2
 			//this.productView.Completed += ProductView_Completed;
 			this.createBudgetView.Completed += CreateBudgetView_Completed;
 
+			this.budgetView.BudgetStateChange += BudgetView_BudgetStateChange;
+
 			gridBudgets.AutoGenerateColumns = false;
 
 			cbMonths.DataSource = monthsProvider.Months;
@@ -41,6 +43,11 @@ namespace DrCost2
 
 			setCurrentYearAndMonth();
 
+			updateData();
+		}
+
+		private void BudgetView_BudgetStateChange(object? sender, EventArgs e)
+		{
 			updateData();
 		}
 

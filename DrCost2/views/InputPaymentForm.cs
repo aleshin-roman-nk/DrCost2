@@ -27,8 +27,6 @@ namespace DrCost2.views
 			this.productTypeSelectView = paymentSampleSelectView;
 			paymentSampleSelectView.Completed += ProductTypeSelectView_Completed;
 
-			//cbCurrency.DataSource = currencyService.GetAll();
-			//cbCurrency.DisplayMember = "name";
 		}
 
 		private void ProductTypeSelectView_Completed(object? sender, PaymentSample e)
@@ -68,17 +66,6 @@ namespace DrCost2.views
 				});
 			this.Hide();
 		}
-		//Currency GetCurrency()
-		//{
-		//	Currency? selectedObject = cbCurrency.SelectedItem as Currency;
-
-		//	if (selectedObject != null)
-		//	{
-		//		return selectedObject;
-		//	}
-
-		//	return null;
-		//}
 
 		private void ProductView_FormClosing(object sender, FormClosingEventArgs e)
 		{

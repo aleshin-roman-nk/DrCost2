@@ -52,15 +52,13 @@ namespace DrCost2
 				.AddSingleton<ICreateBudgetView, CreateBudgetForm>()
 				.AddSingleton<IInputPaymentView, InputPaymentForm>()
 				.AddSingleton<ICreatePaymentsView, CreatePaymentsForm>()
+				.AddSingleton<IPaymentsView, PaymentsForm>()
 
-				//.AddSingleton<ProductService>()
-				//.AddSingleton<ProductNameService>()
-				//.AddSingleton<ProductCategoryService>()
-				//.AddSingleton<CurrencyService>()
-				//.AddSingleton<MonthMoneyService>()
-				//.AddSingleton<FindingTagService>()
+				.AddSingleton<PaymentService>()
+				.AddSingleton<PaymentCategoryService>()
 				.AddSingleton<BudgetService>()
-				.AddSingleton<PaymentSamplePageService>()
+				.AddSingleton<PaymentSampleService>()
+				.AddSingleton<FindingTagService>()
 				.AddSingleton<MonthsProvider>();
 
 			return services.BuildServiceProvider();

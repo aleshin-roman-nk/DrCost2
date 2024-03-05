@@ -9,6 +9,6 @@ namespace DrCost2.views
 	public interface IBudgetView
 	{
 		void ShowModal(int budgetId);
-		event EventHandler Completed;
+		event EventHandler BudgetStateChange;
 	}
 }

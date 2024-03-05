@@ -21,6 +21,11 @@ namespace SQLiteRepo
 				.HasMany(b => b.Payments)
 				.WithOne() // Assuming PaymentDb does not have a navigation property back to BudgetDb
 				.HasForeignKey(p => p.budgetId); // Replace YourForeignKeyPropertyName with the actual name of the foreign key property in PaymentDb
+
+			modelBuilder.Entity<PaymentSampleDb>()
+				.HasOne(p => p.category)
+				.WithMany()
+				.HasForeignKey(p => p.categoryId);
 		}
 
 		public DbSet<PaymentCategoryDb> PaymentCategories { get; set; }

@@ -21,8 +21,9 @@ namespace DrCost2.views
 		private readonly MonthsProvider monthsProvider;
 		private readonly BudgetService budgetService;
 		private readonly ICreatePaymentsView createPaymentsView;
+		private readonly IPaymentsView paymentsView;
 
-		public event EventHandler Completed;
+		public event EventHandler BudgetStateChange;
 
 		BindingSource bsCategories = new BindingSource();
 
@@ -34,18 +35,31 @@ namespace DrCost2.views
 		public BudgetForm(
 			MonthsProvider monthsProvider,
 			BudgetService budgetService,
-			ICreatePaymentsView createPaymentsView
+			ICreatePaymentsView createPaymentsView,
+			IPaymentsView paymentsView
 			)
 		{
 			InitializeComponent();
 			this.monthsProvider = monthsProvider;
 			this.budgetService = budgetService;
 			this.createPaymentsView = createPaymentsView;
+			this.paymentsView = paymentsView;
+			createPaymentsView.PaymentsChanged += CreatePaymentsView_PaymentsChanged;
+
 			cbMonths.DataSource = monthsProvider.Months;
 			cbMonths.DisplayMember = "name";
 		}
+
+		private void CreatePaymentsView_PaymentsChanged(object? sender, EventArgs e)
+		{
+			updateBudget();
+			_changed = true;
+		}
+
 		public void ShowModal(int budgetId)
 		{
+			_changed = false;
+
 			setCurrentYearAndMonth();
 
 			Month selectedMonth = cbMonths.SelectedItem as Month;
@@ -70,6 +84,8 @@ namespace DrCost2.views
 		{
 			e.Cancel = true;
 			this.Hide();
+
+			if (_changed) BudgetStateChange?.Invoke(this, EventArgs.Empty);
 		}
 
 		private IEnumerable<PaymentCategoryComponed> buildCategoriesComponed(IEnumerable<Payment> payments)
@@ -99,7 +115,7 @@ namespace DrCost2.views
 			gridCategories.DataSource = bsCategories;
 		}
 
-		private void updateGudget()
+		private void updateBudget()
 		{
 			if (_budget == null) return;
 			_budget = budgetService.GetBudget(_budget.id, (int)numericYear.Value, (cbMonths.SelectedItem as Month).month);
@@ -108,17 +124,22 @@ namespace DrCost2.views
 
 		private void numericYear_ValueChanged(object sender, EventArgs e)
 		{
-			updateGudget();
+			updateBudget();
 		}
 
 		private void cbMonths_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			updateGudget();
+			updateBudget();
 		}
 
 		private void btnCreatePayment_Click(object sender, EventArgs e)
 		{
 			createPaymentsView.ShowModal(_budget.id);
+		}
+
+		private void btnViewDetail_Click(object sender, EventArgs e)
+		{
+			paymentsView.ShowModal(_budget.id);
 		}
 	}
 }

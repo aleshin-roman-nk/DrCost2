@@ -1,4 +1,5 @@
-﻿using Core.entity;
+﻿using Core.dto;
+using Core.entity;
 using Core.services;
 using System;
 using System.Collections.Generic;
@@ -14,48 +15,49 @@ namespace DrCost2.views
 {
 	public partial class CreatePaymentSampleForm : Form, ICreatePaymentSampleView
 	{
-		//private readonly FindingTagService findingTagService;
-		//private readonly ProductCategoryService productCategoryService;
-		//private readonly ProductNameService productNameService;
+		private readonly FindingTagService findingTagService;
+		private readonly PaymentCategoryService paymentCategoryService;
+		private readonly PaymentSampleService paymentSampleService;
 
 		public CreatePaymentSampleForm(
-			//FindingTagService findingTagService,
-			//ProductCategoryService productCategoryService,
-			//ProductNameService productNameService
+			FindingTagService findingTagService,
+			PaymentCategoryService paymentCategoryService,
+			PaymentSampleService paymentSampleService
 			)
 		{
 			InitializeComponent();
-			//this.findingTagService = findingTagService;
-			//this.productCategoryService = productCategoryService;
-			//this.productNameService = productNameService;
-			//cbFindingTag.DataSource = findingTagService.GetAll();
-			//cbFindingTag.DisplayMember = "name";
+			this.findingTagService = findingTagService;
+			this.paymentCategoryService = paymentCategoryService;
+			this.paymentSampleService = paymentSampleService;
 
-			//cbCategory.DataSource = productCategoryService.GetAll();
-			//cbCategory.DisplayMember = "name";
+			cbFindingTag.DataSource = this.findingTagService.GetAll();
+			cbFindingTag.DisplayMember = "name";
+
+			cbCategory.DataSource = this.paymentCategoryService.GetAll();
+			cbCategory.DisplayMember = "name";
 		}
 
 		public event EventHandler<PaymentSample> Completed;
 
 		private void btnAccept_Click(object sender, EventArgs e)
 		{
-			//if (string.IsNullOrEmpty(textProductName.Text)) return;
+			if (string.IsNullOrEmpty(textProductName.Text)) return;
 
-			//var selectedTag = (FindingTag)cbFindingTag.SelectedItem;
-			//var selectedCategory = (PaymentCategory)cbCategory.SelectedItem;
+			var selectedTag = (FindingTag)cbFindingTag.SelectedItem;
+			var selectedCategory = (PaymentCategory)cbCategory.SelectedItem;
 
-			//PaymentSample pName = new PaymentSample
-			//{
-			//	findingTagId = selectedTag.id,
-			//	name = textProductName.Text,
-			//	ProductCategoryId = selectedCategory.id
-			//};
+			CreatePaymentSampleDto pSample = new CreatePaymentSampleDto
+			{
+				tagId = selectedTag.id,
+				name = textProductName.Text,
+				categoryId = selectedCategory.id
+			};
 
-			//pName = productNameService.Add(pName);
+			var newPs = paymentSampleService.Create(pSample);
 
-			//Completed?.Invoke(this, pName);
+			Completed?.Invoke(this, newPs);
 
-			//this.Hide();
+			this.Hide();
 		}
 
 		private void ProductNameForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -64,7 +66,7 @@ namespace DrCost2.views
 			this.Hide();
 		}
 
-		private void button2_Click(object sender, EventArgs e)
+		private void btnCancel_Click(object sender, EventArgs e)
 		{
 			this.Hide();
 		}

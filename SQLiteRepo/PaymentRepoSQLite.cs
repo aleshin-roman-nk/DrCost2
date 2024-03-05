@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Core.dto;
 using Core.entity;
 using Core.repos;
 using Microsoft.EntityFrameworkCore;
@@ -38,6 +39,24 @@ namespace SQLiteRepo
 			db.SaveChanges();
 
 			return mapper.Map<Payment>(savePr);
+		}
+
+		public void CreateRange(IEnumerable<CreatePaymentDto> dtos)
+		{
+			foreach (var p in dtos)
+			{
+				db.Payments.Add(new PaymentDb
+				{
+					budgetId = p.budgetId,
+					categoryId = p.categoryId,
+					count = p.count,
+					Date = p.Date,
+					name = p.name,
+					price = p.price
+				});
+			}
+
+			db.SaveChanges();
 		}
 
 		public void Delete(Payment pr)

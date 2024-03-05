@@ -35,6 +35,8 @@ namespace SQLiteRepo
 		{
 			var b = db.Budgets.FirstOrDefault(x => x.id == budgetId);
 
+			if (b == null) throw new InvalidOperationException($"No budget with id{budgetId}");
+
 			DateTime dt1 = new DateTime(year, month, 1);
 			DateTime dt2 = dt1.AddMonths(1);
 

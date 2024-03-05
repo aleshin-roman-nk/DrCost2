@@ -79,3 +79,4 @@ D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.SelectPaymentSampl
 D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.CreateBudgetForm.resources
 D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.CreatePaymentsForm.resources
 D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.InputPaymentForm.resources
+D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.PaymentsForm.resources

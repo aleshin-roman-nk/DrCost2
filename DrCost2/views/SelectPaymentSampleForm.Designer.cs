@@ -77,8 +77,8 @@
 			lvPaymentSamples.TabIndex = 3;
 			lvPaymentSamples.UseCompatibleStateImageBehavior = false;
 			lvPaymentSamples.View = View.List;
-			lvPaymentSamples.SelectedIndexChanged += listViewProductNames_SelectedIndexChanged;
-			lvPaymentSamples.MouseDoubleClick += listViewProductNames_MouseDoubleClick;
+			lvPaymentSamples.SelectedIndexChanged += listViewPaymentSamples_SelectedIndexChanged;
+			lvPaymentSamples.MouseDoubleClick += listViewPaymentSamples_MouseDoubleClick;
 			// 
 			// btnAddProductName
 			// 

@@ -1,0 +1,16 @@
+D:\prg\DrCost2\SQLiteRepo\bin\Release\net6.0\SQLiteRepo.deps.json
+D:\prg\DrCost2\SQLiteRepo\bin\Release\net6.0\SQLiteRepo.dll
+D:\prg\DrCost2\SQLiteRepo\bin\Release\net6.0\SQLiteRepo.pdb
+D:\prg\DrCost2\SQLiteRepo\bin\Release\net6.0\Core.dll
+D:\prg\DrCost2\SQLiteRepo\bin\Release\net6.0\Core.pdb
+D:\prg\DrCost2\SQLiteRepo\obj\Release\net6.0\SQLiteRepo.csproj.AssemblyReference.cache
+D:\prg\DrCost2\SQLiteRepo\obj\Release\net6.0\SQLiteRepo.GeneratedMSBuildEditorConfig.editorconfig
+D:\prg\DrCost2\SQLiteRepo\obj\Release\net6.0\SQLiteRepo.AssemblyInfoInputs.cache
+D:\prg\DrCost2\SQLiteRepo\obj\Release\net6.0\SQLiteRepo.AssemblyInfo.cs
+D:\prg\DrCost2\SQLiteRepo\obj\Release\net6.0\SQLiteRepo.csproj.CoreCompileInputs.cache
+D:\prg\DrCost2\SQLiteRepo\obj\Release\net6.0\SQLiteRepo.sourcelink.json
+D:\prg\DrCost2\SQLiteRepo\obj\Release\net6.0\SQLiteRepo.csproj.Up2Date
+D:\prg\DrCost2\SQLiteRepo\obj\Release\net6.0\SQLiteRepo.dll
+D:\prg\DrCost2\SQLiteRepo\obj\Release\net6.0\refint\SQLiteRepo.dll
+D:\prg\DrCost2\SQLiteRepo\obj\Release\net6.0\SQLiteRepo.pdb
+D:\prg\DrCost2\SQLiteRepo\obj\Release\net6.0\ref\SQLiteRepo.dll
