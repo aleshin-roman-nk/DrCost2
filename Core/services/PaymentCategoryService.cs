@@ -21,5 +21,10 @@ namespace Core.services
 		{
 			return paymentCategoryRepo.GetAll();
 		}
+
+		public PaymentCategory Create(string catName)
+		{
+			return paymentCategoryRepo.Create(catName);
+		}
 	}
 }

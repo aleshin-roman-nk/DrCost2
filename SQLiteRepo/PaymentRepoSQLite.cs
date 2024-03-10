@@ -52,7 +52,8 @@ namespace SQLiteRepo
 					count = p.count,
 					Date = p.Date,
 					name = p.name,
-					price = p.price
+					price = p.price,
+					paymentSampleId = p.paymentSampleId
 				});
 			}
 

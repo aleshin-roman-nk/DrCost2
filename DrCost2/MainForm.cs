@@ -4,14 +4,17 @@ using Core.services;
 using DrCost2.Helpers;
 using DrCost2.UIEntities;
 using DrCost2.views;
+using DrCost2.views.Employment;
 using System.Text;
 
 namespace DrCost2
 {
-    public partial class MainForm : Form
+	public partial class MainForm : Form
 	{
 		private readonly IBudgetView budgetView;
 		private readonly ICreateBudgetView createBudgetView;
+		private readonly IEmploymentDocView employmentDocView;
+		private readonly IPartitionManagerView partitionManagerView;
 		private readonly MonthsProvider monthsProvider;
 		private readonly BudgetService budgetService;
 		BindingSource bsBudgets = new BindingSource();
@@ -21,6 +24,8 @@ namespace DrCost2
 		public MainForm(
 			IBudgetView budgetView,
 			ICreateBudgetView createBudgetView,
+			IEmploymentDocView employmentDocView,
+			IPartitionManagerView partitionManagerView,
 			MonthsProvider monthsProvider,
 			BudgetService budgetService
 			)
@@ -28,6 +33,8 @@ namespace DrCost2
 			InitializeComponent();
 			this.budgetView = budgetView;
 			this.createBudgetView = createBudgetView;
+			this.employmentDocView = employmentDocView;
+			this.partitionManagerView = partitionManagerView;
 			this.monthsProvider = monthsProvider;
 			this.budgetService = budgetService;
 
@@ -113,14 +120,32 @@ namespace DrCost2
 
 		private void gridBudgets_KeyDown(object sender, KeyEventArgs e)
 		{
-			if(Keys.Enter == e.KeyCode)
+			if (Keys.Enter == e.KeyCode)
 			{
-				if(bsBudgets.DataSource != null)
+				if (bsBudgets.DataSource != null)
 				{
 					budgetView.ShowModal(_currentBudget.id);
 				}
 				e.Handled = true;
 			}
+		}
+
+		private void btnGoEmployees_Click(object sender, EventArgs e)
+		{
+			this.employmentDocView.ShowModal();
+		}
+
+		private void gridBudgets_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+		{
+			if (bsBudgets.DataSource != null)
+			{
+				budgetView.ShowModal(_currentBudget.id);
+			}
+		}
+
+		private void btnPartitionManagerStart_Click(object sender, EventArgs e)
+		{
+			partitionManagerView.ShowModal();
 		}
 	}
 }

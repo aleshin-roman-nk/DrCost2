@@ -27,19 +27,14 @@ namespace SQLiteRepo
 			mapper = mapCfg.CreateMapper();
 		}
 
-		public FindingTag Add(FindingTag pr)
+		public FindingTag Create(string tagName)
 		{
-			throw new NotImplementedException();
-		}
+			FindingTagDb t = new FindingTagDb { name = tagName };
 
-		public void Delete(FindingTag pr)
-		{
-			throw new NotImplementedException();
-		}
+			db.FindingTags.Add(t);
+			db.SaveChanges();
 
-		public FindingTag Get(int id)
-		{
-			throw new NotImplementedException();
+			return new FindingTag { name = t.name, id = t.id };
 		}
 
 		public IEnumerable<FindingTag> GetAll()

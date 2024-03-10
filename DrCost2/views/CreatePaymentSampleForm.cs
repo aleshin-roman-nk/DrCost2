@@ -29,12 +29,6 @@ namespace DrCost2.views
 			this.findingTagService = findingTagService;
 			this.paymentCategoryService = paymentCategoryService;
 			this.paymentSampleService = paymentSampleService;
-
-			cbFindingTag.DataSource = this.findingTagService.GetAll();
-			cbFindingTag.DisplayMember = "name";
-
-			cbCategory.DataSource = this.paymentCategoryService.GetAll();
-			cbCategory.DisplayMember = "name";
 		}
 
 		public event EventHandler<PaymentSample> Completed;
@@ -73,6 +67,15 @@ namespace DrCost2.views
 
 		void ICreatePaymentSampleView.ShowDialog()
 		{
+			cbFindingTag.DataSource = null;
+			cbCategory.DataSource = null;
+
+			cbFindingTag.DataSource = this.findingTagService.GetAll();
+			cbFindingTag.DisplayMember = "name";
+
+			cbCategory.DataSource = this.paymentCategoryService.GetAll();
+			cbCategory.DisplayMember = "name";
+
 			this.ShowDialog();
 		}
 	}

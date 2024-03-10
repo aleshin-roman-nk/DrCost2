@@ -12,7 +12,7 @@ namespace Core.entity
 		public string? name { get; set; }
 		public IEnumerable<BudgetIncoming>? BudgetIncomings {  get; set; }
 		public IEnumerable<Payment>? Payments { get; set; }
-		public string? year { get; }
-		public string? month { get; }
+		//public string? year { get; }
+		//public string? month { get; }
 	}
 }

@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace Core.repos
 {
-	public interface IFindingTagRepo: IRepo<FindingTag>
+	public interface IFindingTagRepo
 	{
 		IEnumerable<FindingTag> GetAll();
+		FindingTag Create(string tagName);
 	}
 }

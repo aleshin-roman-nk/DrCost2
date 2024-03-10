@@ -76,7 +76,8 @@ namespace DrCost2.views
 				count = p.count,
 				Date = p.DateTime,
 				name = p.name,
-				price = p.price
+				price = p.price,
+				paymentSampleId = p.paymentSample.id
 			});
 
 			paymentService.CreateRange(toSave);

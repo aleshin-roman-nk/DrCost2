@@ -106,7 +106,7 @@ namespace DrCost2.views
 		private void placeObject(Budget b)
 		{
 			lblBudgetName.Text = b.name;
-			lblPaymentTotal.Text = b.Payments.Sum(x => x.sum).ToString();
+			lblPaymentTotal.Text = b.Payments.Sum(x => x.sum).ToString("c");
 
 			bsCategories.DataSource = null;
 			gridCategories.DataSource = null;

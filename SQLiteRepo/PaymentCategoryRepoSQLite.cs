@@ -19,17 +19,27 @@ namespace SQLiteRepo
 		{
 			this.db = db;
 
-			var mapCfg = new MapperConfiguration(cfg =>
-			{
-				cfg.CreateMap<PaymentCategory, PaymentCategoryDb>().ReverseMap();
-			});
+			//var mapCfg = new MapperConfiguration(cfg =>
+			//{
+			//	cfg.CreateMap<PaymentCategory, PaymentCategoryDb>().ReverseMap();
+			//});
 
-			mapper = mapCfg.CreateMapper();
+			//mapper = mapCfg.CreateMapper();
 		}
 
 		public PaymentCategory Add(PaymentCategory pr)
 		{
 			throw new NotImplementedException();
+		}
+
+		public PaymentCategory Create(string cName)
+		{
+			PaymentCategory c = new PaymentCategory { name = cName };
+
+			db.PaymentCategories.Add(c);
+			db.SaveChanges();
+
+			return c;
 		}
 
 		public void Delete(PaymentCategory pr)
@@ -44,7 +54,8 @@ namespace SQLiteRepo
 
 		public IEnumerable<PaymentCategory> GetAll()
 		{
-			return db.PaymentCategories.Select(x => mapper.Map<PaymentCategory>(x)).ToArray();
+			//return db.PaymentCategories.Select(x => mapper.Map<PaymentCategory>(x)).ToArray();
+			return db.PaymentCategories.ToArray();
 		}
 
 		public PaymentCategory Update(PaymentCategory pr)

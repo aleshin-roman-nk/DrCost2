@@ -17,5 +17,6 @@ namespace Core.entity
 		public decimal sum => price * count;
 		public string? categoryName { get; set; }
 		//public bool committed { get; set; }
+		public int? cashReceiptId { get; set; }
 	}
 }

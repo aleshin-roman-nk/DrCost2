@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -14,7 +15,8 @@ namespace SQLiteRepo.ent
 		public string name { get; set; }
 		public int categoryId { get; set; }
 		public int findingTagId { get; set; }
-		public PaymentCategoryDb category {  get; set; }
+		//public PaymentCategoryDb category {  get; set; }
+		public PaymentCategory category {  get; set; }
 		public FindingTagDb findingTag { get; set; }
 	}
 }

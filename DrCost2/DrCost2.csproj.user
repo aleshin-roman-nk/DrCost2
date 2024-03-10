@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="CashReceipts\CashReceiptCreatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CashReceipts\CashReceiptPaymentInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CashReceipts\CashReceiptsMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -13,10 +22,31 @@
     <Compile Update="views\CreatePaymentsForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="views\Employment\EmployeeSelectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\Employment\EmployeesSourceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\Employment\EmploymentDocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\Employment\EmplPaymentSourceSelectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\Employment\EmplPaymentEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="views\InputPaymentForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="views\CreatePaymentSampleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\InputStringForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\PartitionManagerForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="views\PaymentsForm.cs">

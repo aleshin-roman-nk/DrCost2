@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -17,6 +18,8 @@ namespace SQLiteRepo.ent
         public decimal price { get; set; }
         public decimal count { get; set; }
         public DateTime Date { get; set; }
-        public PaymentCategoryDb category { get; set; }
+        //public PaymentCategoryDb category { get; set; }
+        public PaymentCategory category { get; set; }
+        public int paymentSampleId { get; set; }
 	}
 }

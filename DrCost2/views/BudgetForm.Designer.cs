@@ -29,9 +29,8 @@
 		private void InitializeComponent()
 		{
 			components = new System.ComponentModel.Container();
+			DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
 			gridCategories = new DataGridView();
-			categoryNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-			summDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
 			paymentCategoryComponedBindingSource = new BindingSource(components);
 			cbMonths = new ComboBox();
 			numericYear = new NumericUpDown();
@@ -42,6 +41,8 @@
 			label4 = new Label();
 			btnCreatePayment = new Button();
 			btnViewDetail = new Button();
+			categoryNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+			summDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)gridCategories).BeginInit();
 			((System.ComponentModel.ISupportInitialize)paymentCategoryComponedBindingSource).BeginInit();
 			((System.ComponentModel.ISupportInitialize)numericYear).BeginInit();
@@ -59,6 +60,7 @@
 			gridCategories.DataSource = paymentCategoryComponedBindingSource;
 			gridCategories.Location = new Point(12, 204);
 			gridCategories.Name = "gridCategories";
+			gridCategories.ReadOnly = true;
 			gridCategories.RowHeadersVisible = false;
 			gridCategories.RowHeadersWidth = 51;
 			gridCategories.RowTemplate.Height = 29;
@@ -66,22 +68,6 @@
 			gridCategories.ShowCellToolTips = false;
 			gridCategories.Size = new Size(1075, 428);
 			gridCategories.TabIndex = 2;
-			// 
-			// categoryNameDataGridViewTextBoxColumn
-			// 
-			categoryNameDataGridViewTextBoxColumn.DataPropertyName = "categoryName";
-			categoryNameDataGridViewTextBoxColumn.HeaderText = "Наименование категории";
-			categoryNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-			categoryNameDataGridViewTextBoxColumn.Name = "categoryNameDataGridViewTextBoxColumn";
-			categoryNameDataGridViewTextBoxColumn.Width = 400;
-			// 
-			// summDataGridViewTextBoxColumn
-			// 
-			summDataGridViewTextBoxColumn.DataPropertyName = "summ";
-			summDataGridViewTextBoxColumn.HeaderText = "Сумма";
-			summDataGridViewTextBoxColumn.MinimumWidth = 6;
-			summDataGridViewTextBoxColumn.Name = "summDataGridViewTextBoxColumn";
-			summDataGridViewTextBoxColumn.Width = 200;
 			// 
 			// paymentCategoryComponedBindingSource
 			// 
@@ -93,7 +79,7 @@
 			cbMonths.FormattingEnabled = true;
 			cbMonths.Location = new Point(105, 74);
 			cbMonths.Name = "cbMonths";
-			cbMonths.Size = new Size(275, 29);
+			cbMonths.Size = new Size(275, 36);
 			cbMonths.TabIndex = 12;
 			cbMonths.SelectedIndexChanged += cbMonths_SelectedIndexChanged;
 			// 
@@ -103,7 +89,7 @@
 			numericYear.Maximum = new decimal(new int[] { 4000, 0, 0, 0 });
 			numericYear.Minimum = new decimal(new int[] { 1990, 0, 0, 0 });
 			numericYear.Name = "numericYear";
-			numericYear.Size = new Size(87, 29);
+			numericYear.Size = new Size(87, 34);
 			numericYear.TabIndex = 11;
 			numericYear.Value = new decimal(new int[] { 1990, 0, 0, 0 });
 			numericYear.ValueChanged += numericYear_ValueChanged;
@@ -114,7 +100,7 @@
 			lblBudgetName.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
 			lblBudgetName.Location = new Point(12, 23);
 			lblBudgetName.Name = "lblBudgetName";
-			lblBudgetName.Size = new Size(52, 30);
+			lblBudgetName.Size = new Size(65, 38);
 			lblBudgetName.TabIndex = 13;
 			lblBudgetName.Text = "000";
 			// 
@@ -123,7 +109,7 @@
 			label1.AutoSize = true;
 			label1.Location = new Point(12, 126);
 			label1.Name = "label1";
-			label1.Size = new Size(81, 21);
+			label1.Size = new Size(103, 28);
 			label1.TabIndex = 14;
 			label1.Text = "Выделено";
 			// 
@@ -132,7 +118,7 @@
 			label2.AutoSize = true;
 			label2.Location = new Point(121, 126);
 			label2.Name = "label2";
-			label2.Size = new Size(37, 21);
+			label2.Size = new Size(45, 28);
 			label2.TabIndex = 15;
 			label2.Text = "000";
 			// 
@@ -141,7 +127,7 @@
 			lblPaymentTotal.AutoSize = true;
 			lblPaymentTotal.Location = new Point(121, 154);
 			lblPaymentTotal.Name = "lblPaymentTotal";
-			lblPaymentTotal.Size = new Size(37, 21);
+			lblPaymentTotal.Size = new Size(45, 28);
 			lblPaymentTotal.TabIndex = 17;
 			lblPaymentTotal.Text = "000";
 			// 
@@ -150,7 +136,7 @@
 			label4.AutoSize = true;
 			label4.Location = new Point(12, 154);
 			label4.Name = "label4";
-			label4.Size = new Size(59, 21);
+			label4.Size = new Size(74, 28);
 			label4.TabIndex = 16;
 			label4.Text = "Расход";
 			// 
@@ -176,9 +162,30 @@
 			btnViewDetail.UseVisualStyleBackColor = true;
 			btnViewDetail.Click += btnViewDetail_Click;
 			// 
+			// categoryNameDataGridViewTextBoxColumn
+			// 
+			categoryNameDataGridViewTextBoxColumn.DataPropertyName = "categoryName";
+			categoryNameDataGridViewTextBoxColumn.HeaderText = "Наименование категории";
+			categoryNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+			categoryNameDataGridViewTextBoxColumn.Name = "categoryNameDataGridViewTextBoxColumn";
+			categoryNameDataGridViewTextBoxColumn.ReadOnly = true;
+			categoryNameDataGridViewTextBoxColumn.Width = 400;
+			// 
+			// summDataGridViewTextBoxColumn
+			// 
+			summDataGridViewTextBoxColumn.DataPropertyName = "summ";
+			dataGridViewCellStyle1.Format = "C2";
+			dataGridViewCellStyle1.NullValue = null;
+			summDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+			summDataGridViewTextBoxColumn.HeaderText = "Сумма";
+			summDataGridViewTextBoxColumn.MinimumWidth = 6;
+			summDataGridViewTextBoxColumn.Name = "summDataGridViewTextBoxColumn";
+			summDataGridViewTextBoxColumn.ReadOnly = true;
+			summDataGridViewTextBoxColumn.Width = 200;
+			// 
 			// BudgetForm
 			// 
-			AutoScaleDimensions = new SizeF(9F, 21F);
+			AutoScaleDimensions = new SizeF(11F, 28F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(1099, 643);
 			Controls.Add(btnViewDetail);
@@ -215,8 +222,8 @@
 		private Label label4;
 		private Button btnCreatePayment;
 		private BindingSource paymentCategoryComponedBindingSource;
+		private Button btnViewDetail;
 		private DataGridViewTextBoxColumn categoryNameDataGridViewTextBoxColumn;
 		private DataGridViewTextBoxColumn summDataGridViewTextBoxColumn;
-		private Button btnViewDetail;
 	}
 }

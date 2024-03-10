@@ -80,3 +80,10 @@ D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.CreateBudgetForm.r
 D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.CreatePaymentsForm.resources
 D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.InputPaymentForm.resources
 D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.PaymentsForm.resources
+D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.Employment.EmployeeSelectorForm.resources
+D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.Employment.EmployeesSourceForm.resources
+D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.Employment.EmploymentDocForm.resources
+D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.Employment.EmplPaymentEditorForm.resources
+D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.Employment.EmplPaymentSourceSelectorForm.resources
+D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.InputStringForm.resources
+D:\prg\DrCost2\DrCost2\obj\Debug\net6.0-windows\DrCost2.views.PartitionManagerForm.resources

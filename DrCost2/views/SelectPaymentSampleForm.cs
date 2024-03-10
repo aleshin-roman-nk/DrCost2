@@ -40,15 +40,6 @@ namespace DrCost2.views
 			this.createPaymentSampleView = createPaymentSampleView;
 
 			this.createPaymentSampleView.Completed += createPaymentSampleView_Completed;
-
-			paymentSamples.AddRange(paymentSampleService.GetPaymentSamples());
-
-			listBoxFindingTags.DataSource = findingTagService.GetAll();
-			listBoxFindingTags.DisplayMember = "name";
-
-			filterPaymentSample(listBoxFindingTags.SelectedItem as FindingTag);
-
-			selectedPaymentSample = getSelectedPaymentSample();
 		}
 
 		private void createPaymentSampleView_Completed(object? sender, PaymentSample e)
@@ -90,6 +81,17 @@ namespace DrCost2.views
 
 		public void ShowModal()
 		{
+			paymentSamples.Clear();
+
+			paymentSamples.AddRange(paymentSampleService.GetPaymentSamples());
+
+			listBoxFindingTags.DataSource = findingTagService.GetAll();
+			listBoxFindingTags.DisplayMember = "name";
+
+			filterPaymentSample(listBoxFindingTags.SelectedItem as FindingTag);
+
+			selectedPaymentSample = getSelectedPaymentSample();
+
 			this.ShowDialog();
 			//this.Focus();
 		}

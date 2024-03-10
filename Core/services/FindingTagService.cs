@@ -20,5 +20,10 @@ namespace Core.services
 		{
 			return findingTagRepo.GetAll();
 		}
+
+		public FindingTag Create(string tagName)
+		{
+			return findingTagRepo.Create(tagName);
+		}
 	}
 }

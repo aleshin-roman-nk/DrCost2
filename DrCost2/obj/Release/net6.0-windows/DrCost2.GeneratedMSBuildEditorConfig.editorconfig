@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DrCost2
-build_property.ProjectDir = D:\prg\DrCost2\DrCost2\
+build_property.ProjectDir = d:\prg\DrCost2\DrCost2\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

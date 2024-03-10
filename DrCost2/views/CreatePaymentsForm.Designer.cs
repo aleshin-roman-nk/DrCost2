@@ -48,7 +48,7 @@
 			dateTimePicker1.Location = new Point(13, 13);
 			dateTimePicker1.Margin = new Padding(4);
 			dateTimePicker1.Name = "dateTimePicker1";
-			dateTimePicker1.Size = new Size(342, 29);
+			dateTimePicker1.Size = new Size(342, 34);
 			dateTimePicker1.TabIndex = 0;
 			// 
 			// gridPayments
@@ -73,6 +73,7 @@
 			// 
 			nameDataGridViewTextBoxColumn.DataPropertyName = "name";
 			nameDataGridViewTextBoxColumn.HeaderText = "name";
+			nameDataGridViewTextBoxColumn.MinimumWidth = 6;
 			nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
 			nameDataGridViewTextBoxColumn.ReadOnly = true;
 			nameDataGridViewTextBoxColumn.Width = 200;
@@ -81,6 +82,7 @@
 			// 
 			categoryDataGridViewTextBoxColumn.DataPropertyName = "category";
 			categoryDataGridViewTextBoxColumn.HeaderText = "category";
+			categoryDataGridViewTextBoxColumn.MinimumWidth = 6;
 			categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
 			categoryDataGridViewTextBoxColumn.ReadOnly = true;
 			categoryDataGridViewTextBoxColumn.Width = 150;
@@ -89,22 +91,28 @@
 			// 
 			priceDataGridViewTextBoxColumn.DataPropertyName = "price";
 			priceDataGridViewTextBoxColumn.HeaderText = "price";
+			priceDataGridViewTextBoxColumn.MinimumWidth = 6;
 			priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
 			priceDataGridViewTextBoxColumn.ReadOnly = true;
+			priceDataGridViewTextBoxColumn.Width = 125;
 			// 
 			// countDataGridViewTextBoxColumn
 			// 
 			countDataGridViewTextBoxColumn.DataPropertyName = "count";
 			countDataGridViewTextBoxColumn.HeaderText = "count";
+			countDataGridViewTextBoxColumn.MinimumWidth = 6;
 			countDataGridViewTextBoxColumn.Name = "countDataGridViewTextBoxColumn";
 			countDataGridViewTextBoxColumn.ReadOnly = true;
+			countDataGridViewTextBoxColumn.Width = 125;
 			// 
 			// dateTimeDataGridViewTextBoxColumn
 			// 
 			dateTimeDataGridViewTextBoxColumn.DataPropertyName = "DateTime";
 			dateTimeDataGridViewTextBoxColumn.HeaderText = "DateTime";
+			dateTimeDataGridViewTextBoxColumn.MinimumWidth = 6;
 			dateTimeDataGridViewTextBoxColumn.Name = "dateTimeDataGridViewTextBoxColumn";
 			dateTimeDataGridViewTextBoxColumn.ReadOnly = true;
+			dateTimeDataGridViewTextBoxColumn.Width = 125;
 			// 
 			// enteredPaymentDtoBindingSource
 			// 
@@ -122,9 +130,9 @@
 			// 
 			// btnCreateAndClose
 			// 
-			btnCreateAndClose.Location = new Point(897, 8);
+			btnCreateAndClose.Location = new Point(835, 8);
 			btnCreateAndClose.Name = "btnCreateAndClose";
-			btnCreateAndClose.Size = new Size(155, 48);
+			btnCreateAndClose.Size = new Size(217, 48);
 			btnCreateAndClose.TabIndex = 3;
 			btnCreateAndClose.Text = "Create and close";
 			btnCreateAndClose.UseVisualStyleBackColor = true;
@@ -132,7 +140,7 @@
 			// 
 			// CreatePaymentsForm
 			// 
-			AutoScaleDimensions = new SizeF(9F, 21F);
+			AutoScaleDimensions = new SizeF(11F, 28F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(1123, 524);
 			Controls.Add(btnCreateAndClose);

@@ -7,8 +7,9 @@ using Core.entity;
 
 namespace Core.repos
 {
-    public interface IPaymentCategoryRepo: IRepo<PaymentCategory>
+    public interface IPaymentCategoryRepo
 	{
 		IEnumerable<PaymentCategory> GetAll();
+		PaymentCategory Create(string cName);
 	}
 }

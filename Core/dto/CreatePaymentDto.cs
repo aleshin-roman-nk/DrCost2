@@ -14,5 +14,7 @@ namespace Core.dto
 		public DateTime Date { get; set; }
 		public int categoryId { get; set; }
 		public int budgetId { get; set; }
+		public int paymentSampleId { get; set; }
+		public int? cashReceiptId { get; set; }
 	}
 }

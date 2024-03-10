@@ -29,13 +29,17 @@
 		private void InitializeComponent()
 		{
 			components = new System.ComponentModel.Container();
+			DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+			DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
 			btnCreateBudget = new Button();
 			numericYear = new NumericUpDown();
 			cbMonths = new ComboBox();
 			gridBudgets = new DataGridView();
+			budgetTitleBindingSource = new BindingSource(components);
+			btnGoEmployees = new Button();
+			btnPartitionManagerStart = new Button();
 			nameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
 			paymentTotalOfMonthDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-			budgetTitleBindingSource = new BindingSource(components);
 			((System.ComponentModel.ISupportInitialize)numericYear).BeginInit();
 			((System.ComponentModel.ISupportInitialize)gridBudgets).BeginInit();
 			((System.ComponentModel.ISupportInitialize)budgetTitleBindingSource).BeginInit();
@@ -89,11 +93,39 @@
 			gridBudgets.ShowCellToolTips = false;
 			gridBudgets.Size = new Size(1075, 478);
 			gridBudgets.TabIndex = 11;
+			gridBudgets.CellMouseDoubleClick += gridBudgets_CellMouseDoubleClick;
 			gridBudgets.KeyDown += gridBudgets_KeyDown;
+			// 
+			// budgetTitleBindingSource
+			// 
+			budgetTitleBindingSource.DataSource = typeof(Core.entity.BudgetTitle);
+			// 
+			// btnGoEmployees
+			// 
+			btnGoEmployees.Location = new Point(12, 539);
+			btnGoEmployees.Margin = new Padding(4);
+			btnGoEmployees.Name = "btnGoEmployees";
+			btnGoEmployees.Size = new Size(135, 41);
+			btnGoEmployees.TabIndex = 12;
+			btnGoEmployees.Text = "Employees";
+			btnGoEmployees.UseVisualStyleBackColor = true;
+			btnGoEmployees.Click += btnGoEmployees_Click;
+			// 
+			// btnPartitionManagerStart
+			// 
+			btnPartitionManagerStart.Location = new Point(625, 539);
+			btnPartitionManagerStart.Name = "btnPartitionManagerStart";
+			btnPartitionManagerStart.Size = new Size(208, 41);
+			btnPartitionManagerStart.TabIndex = 13;
+			btnPartitionManagerStart.Text = "partition manager";
+			btnPartitionManagerStart.UseVisualStyleBackColor = true;
+			btnPartitionManagerStart.Click += btnPartitionManagerStart_Click;
 			// 
 			// nameDataGridViewTextBoxColumn
 			// 
 			nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+			dataGridViewCellStyle1.NullValue = null;
+			nameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
 			nameDataGridViewTextBoxColumn.HeaderText = "Budget name";
 			nameDataGridViewTextBoxColumn.MinimumWidth = 6;
 			nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
@@ -103,21 +135,22 @@
 			// paymentTotalOfMonthDataGridViewTextBoxColumn
 			// 
 			paymentTotalOfMonthDataGridViewTextBoxColumn.DataPropertyName = "paymentTotalOfMonth";
+			dataGridViewCellStyle2.Format = "C2";
+			dataGridViewCellStyle2.NullValue = null;
+			paymentTotalOfMonthDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
 			paymentTotalOfMonthDataGridViewTextBoxColumn.HeaderText = "Budget total";
 			paymentTotalOfMonthDataGridViewTextBoxColumn.MinimumWidth = 6;
 			paymentTotalOfMonthDataGridViewTextBoxColumn.Name = "paymentTotalOfMonthDataGridViewTextBoxColumn";
 			paymentTotalOfMonthDataGridViewTextBoxColumn.ReadOnly = true;
 			paymentTotalOfMonthDataGridViewTextBoxColumn.Width = 150;
 			// 
-			// budgetTitleBindingSource
-			// 
-			budgetTitleBindingSource.DataSource = typeof(Core.entity.BudgetTitle);
-			// 
 			// MainForm
 			// 
 			AutoScaleDimensions = new SizeF(11F, 28F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(1100, 592);
+			Controls.Add(btnPartitionManagerStart);
+			Controls.Add(btnGoEmployees);
 			Controls.Add(gridBudgets);
 			Controls.Add(cbMonths);
 			Controls.Add(numericYear);
@@ -139,6 +172,8 @@
 		private ComboBox cbMonths;
 		private DataGridView gridBudgets;
 		private BindingSource budgetTitleBindingSource;
+		private Button btnGoEmployees;
+		private Button btnPartitionManagerStart;
 		private DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
 		private DataGridViewTextBoxColumn paymentTotalOfMonthDataGridViewTextBoxColumn;
 	}
