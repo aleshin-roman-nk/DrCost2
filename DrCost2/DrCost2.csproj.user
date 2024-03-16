@@ -28,7 +28,7 @@
     <Compile Update="views\Employment\EmployeesSourceForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="views\Employment\EmploymentDocForm.cs">
+    <Compile Update="views\Employment\EmplMonthDocForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="views\Employment\EmplPaymentSourceSelectorForm.cs">

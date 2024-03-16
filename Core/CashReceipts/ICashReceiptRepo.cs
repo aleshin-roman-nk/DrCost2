@@ -9,7 +9,7 @@ namespace Core.CashReceipts
 {
 	public interface ICashReceiptRepo
 	{
-		IEnumerable<CashReceipt> GetAll();
+		IEnumerable<CashReceipt> GetAll(int year, int month);
 		CashReceipt Create(CreateCashReceiptDto dto);
 	}
 }

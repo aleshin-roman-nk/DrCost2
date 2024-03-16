@@ -10,6 +10,9 @@ using DrCost2.views.Employment;
 using Core.Employment.services;
 using Core.Employment.repos;
 using SQLiteRepo.Employment;
+using DrCost2.CashReceipts;
+using Core.CashReceipts;
+using SQLiteRepo.CashReceipts;
 
 namespace DrCost2
 {
@@ -52,11 +55,12 @@ namespace DrCost2
 				.AddSingleton<IFindingTagRepo, FindingTagRepoSQLite>()
 				.AddSingleton<IPaymentCategoryRepo, PaymentCategoryRepoSQLite>()
 				.AddSingleton<IBudgetRepo, BudgetsRepo>()
-				.AddSingleton<IEmploymentDocRepo, EmploymentDocRepoSQLite>()
+				.AddSingleton<IEmplMonthDocRepo, EmplMonthDocRepoSQLite>()
 				.AddSingleton<IEmployeeRepo, EmployeeRepoSQLite>()
 				.AddSingleton<IEmployeeSourceRepo, EmployeeSourceRepoSQLite>()
 				.AddSingleton<IEmplPaymentSourceRepo, EmplPaymentSourceRepoSQLite>()
 				.AddSingleton<IEmplPaymentRepo, EmplPaymentRepoSQLite>()
+				.AddSingleton<ICashReceiptRepo, CashReceiptRepoSQLite>()
 
 				.AddSingleton<MainForm>()
 				.AddSingleton<IInputPaymentView, InputPaymentForm>()
@@ -67,11 +71,14 @@ namespace DrCost2
 				.AddSingleton<IInputPaymentView, InputPaymentForm>()
 				.AddSingleton<ICreatePaymentsView, CreatePaymentsForm>()
 				.AddSingleton<IPaymentsView, PaymentsForm>()
-				.AddSingleton<IEmploymentDocView, EmploymentDocForm>()
+				.AddSingleton<IEmplMonthDocView, EmplMonthDocForm>()
 				.AddSingleton<IEmplPaymentSourceSelectorView, EmplPaymentSourceSelectorForm>()
 				.AddSingleton<IEmplPaymentEditorView, EmplPaymentEditorForm>()
 				.AddSingleton<IInputStringView, InputStringForm>()
 				.AddSingleton<IPartitionManagerView, PartitionManagerForm>()
+				.AddSingleton<ICashReceiptsMainView, CashReceiptsMainForm>()
+				.AddSingleton<ICashReceiptCreatorView, CashReceiptCreatorForm>()
+				.AddSingleton<ICashReceiptPaymentInputView, CashReceiptPaymentInputForm>()
 
 				.AddSingleton<PaymentService>()
 				.AddSingleton<PaymentCategoryService>()
@@ -79,8 +86,9 @@ namespace DrCost2
 				.AddSingleton<PaymentSampleService>()
 				.AddSingleton<FindingTagService>()
 				.AddSingleton<MonthsProvider>()
-				.AddSingleton<EmploymentDocService>()
-				.AddSingleton<EmplPaymentSourceService>();
+				.AddSingleton<EmplMonthDocService>()
+				.AddSingleton<EmplPaymentSourceService>()
+				.AddSingleton<CashReceiptService>();
 
 			return services.BuildServiceProvider();
 		}

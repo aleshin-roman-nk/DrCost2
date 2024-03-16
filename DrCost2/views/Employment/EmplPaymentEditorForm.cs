@@ -50,7 +50,9 @@ namespace DrCost2.views.Employment
 				price = numPaymentPrice.Value,
 				employeeId = _emplPayment.employeeId,
 				emplPaymentSourceId = _emplPayment.emplPaymentSourceId,
-				tagId = _emplPayment.tagId
+				tagId = _emplPayment.tagId,
+				id = _emplPayment.id,
+				tagName = _emplPayment.tagName,
 			};
 		}
 

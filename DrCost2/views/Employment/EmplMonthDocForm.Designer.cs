@@ -1,6 +1,6 @@
 ﻿namespace DrCost2.views.Employment
 {
-	partial class EmploymentDocForm
+	partial class EmplMonthDocForm
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -29,6 +29,9 @@
 		private void InitializeComponent()
 		{
 			components = new System.ComponentModel.Container();
+			DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+			DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+			DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
 			lblDocName = new Label();
 			splitContainer1 = new SplitContainer();
 			gridEmployees = new DataGridView();
@@ -52,7 +55,7 @@
 			lblOpsTotal = new Label();
 			lblKhozTotal = new Label();
 			btnAddEmpl = new Button();
-			btnAddDoc = new Button();
+			btnCreateDocument = new Button();
 			btnAddPayment = new Button();
 			btnAddAllEmployees = new Button();
 			((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
@@ -128,6 +131,9 @@
 			// sumDataGridViewTextBoxColumn
 			// 
 			sumDataGridViewTextBoxColumn.DataPropertyName = "sum";
+			dataGridViewCellStyle1.Format = "C2";
+			dataGridViewCellStyle1.NullValue = null;
+			sumDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
 			sumDataGridViewTextBoxColumn.HeaderText = "sum";
 			sumDataGridViewTextBoxColumn.MinimumWidth = 6;
 			sumDataGridViewTextBoxColumn.Name = "sumDataGridViewTextBoxColumn";
@@ -176,6 +182,8 @@
 			gridEmplPayment.ShowCellToolTips = false;
 			gridEmplPayment.Size = new Size(712, 519);
 			gridEmplPayment.TabIndex = 0;
+			gridEmplPayment.CellMouseDoubleClick += gridEmplPayment_CellMouseDoubleClick;
+			gridEmplPayment.KeyDown += gridEmplPayment_KeyDown;
 			// 
 			// nameDataGridViewTextBoxColumn1
 			// 
@@ -189,6 +197,9 @@
 			// priceDataGridViewTextBoxColumn
 			// 
 			priceDataGridViewTextBoxColumn.DataPropertyName = "price";
+			dataGridViewCellStyle2.Format = "C2";
+			dataGridViewCellStyle2.NullValue = null;
+			priceDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
 			priceDataGridViewTextBoxColumn.HeaderText = "price";
 			priceDataGridViewTextBoxColumn.MinimumWidth = 6;
 			priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
@@ -207,6 +218,9 @@
 			// sumDataGridViewTextBoxColumn1
 			// 
 			sumDataGridViewTextBoxColumn1.DataPropertyName = "sum";
+			dataGridViewCellStyle3.Format = "C2";
+			dataGridViewCellStyle3.NullValue = null;
+			sumDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle3;
 			sumDataGridViewTextBoxColumn1.HeaderText = "sum";
 			sumDataGridViewTextBoxColumn1.MinimumWidth = 6;
 			sumDataGridViewTextBoxColumn1.Name = "sumDataGridViewTextBoxColumn1";
@@ -240,6 +254,7 @@
 			txtCurrentEmployee.Dock = DockStyle.Top;
 			txtCurrentEmployee.Location = new Point(0, 0);
 			txtCurrentEmployee.Name = "txtCurrentEmployee";
+			txtCurrentEmployee.ReadOnly = true;
 			txtCurrentEmployee.Size = new Size(712, 34);
 			txtCurrentEmployee.TabIndex = 1;
 			// 
@@ -302,16 +317,16 @@
 			btnAddEmpl.UseVisualStyleBackColor = true;
 			btnAddEmpl.Click += btnAddEmpl_Click;
 			// 
-			// btnAddDoc
+			// btnCreateDocument
 			// 
-			btnAddDoc.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-			btnAddDoc.Location = new Point(668, 12);
-			btnAddDoc.Name = "btnAddDoc";
-			btnAddDoc.Size = new Size(154, 45);
-			btnAddDoc.TabIndex = 8;
-			btnAddDoc.Text = "+ док";
-			btnAddDoc.UseVisualStyleBackColor = true;
-			btnAddDoc.Click += btnAddDoc_Click;
+			btnCreateDocument.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+			btnCreateDocument.Location = new Point(668, 12);
+			btnCreateDocument.Name = "btnCreateDocument";
+			btnCreateDocument.Size = new Size(154, 45);
+			btnCreateDocument.TabIndex = 8;
+			btnCreateDocument.Text = "+ док";
+			btnCreateDocument.UseVisualStyleBackColor = true;
+			btnCreateDocument.Click += btnCreateDocument_Click;
 			// 
 			// btnAddPayment
 			// 
@@ -335,14 +350,14 @@
 			btnAddAllEmployees.UseVisualStyleBackColor = true;
 			btnAddAllEmployees.Click += btnAddAllEmployees_Click;
 			// 
-			// EmploymentDocForm
+			// EmplMonthDocForm
 			// 
 			AutoScaleDimensions = new SizeF(11F, 28F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(1314, 683);
 			Controls.Add(btnAddAllEmployees);
 			Controls.Add(btnAddPayment);
-			Controls.Add(btnAddDoc);
+			Controls.Add(btnCreateDocument);
 			Controls.Add(btnAddEmpl);
 			Controls.Add(lblKhozTotal);
 			Controls.Add(lblOpsTotal);
@@ -353,7 +368,7 @@
 			Controls.Add(lblDocName);
 			Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
 			Margin = new Padding(4);
-			Name = "EmploymentDocForm";
+			Name = "EmplMonthDocForm";
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Месячный табель";
 			FormClosing += EmploymentDocForm_FormClosing;
@@ -382,23 +397,23 @@
 		private Label lblOpsTotal;
 		private Label lblKhozTotal;
 		private Button btnAddEmpl;
-		private Button btnAddDoc;
+		private Button btnCreateDocument;
 		private Button btnAddPayment;
 		private DataGridView gridEmployees;
 		private DataGridView gridEmplPayment;
 		private BindingSource employeeBindingSource;
+		private BindingSource emplPaymentBindingSource;
+		private Button btnAddAllEmployees;
+		private TextBox txtCurrentEmployee;
+		private Panel panel1;
+		private Panel panel2;
 		private DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
 		private DataGridViewTextBoxColumn sumDataGridViewTextBoxColumn;
 		private DataGridViewCheckBoxColumn cashDataGridViewCheckBoxColumn;
-		private BindingSource emplPaymentBindingSource;
 		private DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
 		private DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
 		private DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn;
 		private DataGridViewTextBoxColumn sumDataGridViewTextBoxColumn1;
 		private DataGridViewTextBoxColumn tagNameDataGridViewTextBoxColumn;
-		private Button btnAddAllEmployees;
-		private TextBox txtCurrentEmployee;
-		private Panel panel1;
-		private Panel panel2;
 	}
 }

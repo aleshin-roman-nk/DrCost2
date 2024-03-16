@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DrCost2.views.Employment
+namespace Core.entity
 {
-	public interface IEmploymentDocView
+	public class BudgetTitleName
 	{
-		void ShowModal();
+		public int id {  get; set; }
+		public string name { get; set; }
 	}
 }

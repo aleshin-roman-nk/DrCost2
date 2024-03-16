@@ -13,5 +13,6 @@ namespace Core.repos
 		Budget GetBudget(int budgetId, int year, int month);
 		IEnumerable<BudgetTitle> GetBudgets(int year, int month);
 		BudgetTitle Create(CreateBudgetDto createBudgetDto);
+		IEnumerable<BudgetTitleName> GetBudgetTitleNames();
 	}
 }

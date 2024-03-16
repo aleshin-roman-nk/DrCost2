@@ -1,4 +1,5 @@
-﻿using Core.Employment.entity;
+﻿using Core.Employment.dto;
+using Core.Employment.entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,7 @@ namespace Core.Employment.repos
 	public interface IEmployeeRepo
 	{
 		IEnumerable<Employee> CreateRange(IEnumerable<Employee> employees);
+		IEnumerable<Employee> Get(int document);
+		Employee Create(CreateEmployeeDto es);
 	}
 }

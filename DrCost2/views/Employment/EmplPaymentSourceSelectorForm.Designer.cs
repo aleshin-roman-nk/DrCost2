@@ -58,6 +58,7 @@
 			gridEmplPaymentSources.ShowCellToolTips = false;
 			gridEmplPaymentSources.Size = new Size(790, 606);
 			gridEmplPaymentSources.TabIndex = 0;
+			gridEmplPaymentSources.CellMouseDoubleClick += gridEmplPaymentSources_CellMouseDoubleClick;
 			gridEmplPaymentSources.KeyDown += gridEmplPaymentSources_KeyDown;
 			// 
 			// nameDataGridViewTextBoxColumn

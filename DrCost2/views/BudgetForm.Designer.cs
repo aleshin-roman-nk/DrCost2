@@ -31,6 +31,8 @@
 			components = new System.ComponentModel.Container();
 			DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
 			gridCategories = new DataGridView();
+			categoryNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+			summDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
 			paymentCategoryComponedBindingSource = new BindingSource(components);
 			cbMonths = new ComboBox();
 			numericYear = new NumericUpDown();
@@ -41,8 +43,6 @@
 			label4 = new Label();
 			btnCreatePayment = new Button();
 			btnViewDetail = new Button();
-			categoryNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-			summDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)gridCategories).BeginInit();
 			((System.ComponentModel.ISupportInitialize)paymentCategoryComponedBindingSource).BeginInit();
 			((System.ComponentModel.ISupportInitialize)numericYear).BeginInit();
@@ -53,7 +53,7 @@
 			gridCategories.AllowUserToAddRows = false;
 			gridCategories.AllowUserToDeleteRows = false;
 			gridCategories.AllowUserToResizeRows = false;
-			gridCategories.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+			gridCategories.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
 			gridCategories.AutoGenerateColumns = false;
 			gridCategories.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			gridCategories.Columns.AddRange(new DataGridViewColumn[] { categoryNameDataGridViewTextBoxColumn, summDataGridViewTextBoxColumn });
@@ -68,6 +68,27 @@
 			gridCategories.ShowCellToolTips = false;
 			gridCategories.Size = new Size(1075, 428);
 			gridCategories.TabIndex = 2;
+			// 
+			// categoryNameDataGridViewTextBoxColumn
+			// 
+			categoryNameDataGridViewTextBoxColumn.DataPropertyName = "categoryName";
+			categoryNameDataGridViewTextBoxColumn.HeaderText = "Наименование категории";
+			categoryNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+			categoryNameDataGridViewTextBoxColumn.Name = "categoryNameDataGridViewTextBoxColumn";
+			categoryNameDataGridViewTextBoxColumn.ReadOnly = true;
+			categoryNameDataGridViewTextBoxColumn.Width = 400;
+			// 
+			// summDataGridViewTextBoxColumn
+			// 
+			summDataGridViewTextBoxColumn.DataPropertyName = "summ";
+			dataGridViewCellStyle1.Format = "C2";
+			dataGridViewCellStyle1.NullValue = null;
+			summDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+			summDataGridViewTextBoxColumn.HeaderText = "Сумма";
+			summDataGridViewTextBoxColumn.MinimumWidth = 6;
+			summDataGridViewTextBoxColumn.Name = "summDataGridViewTextBoxColumn";
+			summDataGridViewTextBoxColumn.ReadOnly = true;
+			summDataGridViewTextBoxColumn.Width = 200;
 			// 
 			// paymentCategoryComponedBindingSource
 			// 
@@ -161,27 +182,6 @@
 			btnViewDetail.Text = "View detail";
 			btnViewDetail.UseVisualStyleBackColor = true;
 			btnViewDetail.Click += btnViewDetail_Click;
-			// 
-			// categoryNameDataGridViewTextBoxColumn
-			// 
-			categoryNameDataGridViewTextBoxColumn.DataPropertyName = "categoryName";
-			categoryNameDataGridViewTextBoxColumn.HeaderText = "Наименование категории";
-			categoryNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-			categoryNameDataGridViewTextBoxColumn.Name = "categoryNameDataGridViewTextBoxColumn";
-			categoryNameDataGridViewTextBoxColumn.ReadOnly = true;
-			categoryNameDataGridViewTextBoxColumn.Width = 400;
-			// 
-			// summDataGridViewTextBoxColumn
-			// 
-			summDataGridViewTextBoxColumn.DataPropertyName = "summ";
-			dataGridViewCellStyle1.Format = "C2";
-			dataGridViewCellStyle1.NullValue = null;
-			summDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-			summDataGridViewTextBoxColumn.HeaderText = "Сумма";
-			summDataGridViewTextBoxColumn.MinimumWidth = 6;
-			summDataGridViewTextBoxColumn.Name = "summDataGridViewTextBoxColumn";
-			summDataGridViewTextBoxColumn.ReadOnly = true;
-			summDataGridViewTextBoxColumn.Width = 200;
 			// 
 			// BudgetForm
 			// 

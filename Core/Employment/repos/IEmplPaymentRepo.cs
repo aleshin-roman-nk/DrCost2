@@ -10,5 +10,7 @@ namespace Core.Employment.repos
 	public interface IEmplPaymentRepo
 	{
 		EmplPayment Create(EmplPayment payment);
+		bool Delete(EmplPayment payment);
+		bool Update(EmplPayment payment);
 	}
 }

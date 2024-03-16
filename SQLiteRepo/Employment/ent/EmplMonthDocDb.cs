@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace SQLiteRepo.Employment.ent
 {
-	[Table("PaymentMainDocs")]
-	public class PaymentMainDocDb
+	[Table("EmplMonthDocs")]
+	public class EmplMonthDocDb
 	{
 		public int id { get; set; }
 		public string? uname { get; set; } // 2024.02; уникальный ключ-имя

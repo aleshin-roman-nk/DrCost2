@@ -11,5 +11,6 @@ namespace SQLiteRepo.Employment.ent
 		public int id { get; set; }
 		public string? name { get; set; }
 		public bool cash { get; set; }
+		public bool active {  get; set; } = true;
 	}
 }

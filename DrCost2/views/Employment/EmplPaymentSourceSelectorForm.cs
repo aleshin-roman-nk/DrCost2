@@ -53,5 +53,11 @@ namespace DrCost2.views.Employment
 			e.Cancel = true;
 			this.Hide();
 		}
+
+		private void gridEmplPaymentSources_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+		{
+			this.Hide();
+			EmplPaymentSourceSelected?.Invoke(this, _current);
+		}
 	}
 }

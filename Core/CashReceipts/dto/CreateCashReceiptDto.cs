@@ -9,7 +9,7 @@ namespace Core.CashReceipts.dto
 {
 	public class CreateCashReceiptDto
 	{
-		public string name {  get; set; } = string.Empty;
+		public string shop {  get; set; } = string.Empty;
 		public DateTime Date { get; set; }
 		public IEnumerable<CreatePaymentDto> CreatePaymentDtos { get; set; }
 	}

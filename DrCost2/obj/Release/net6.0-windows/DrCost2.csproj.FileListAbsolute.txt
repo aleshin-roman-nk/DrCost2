@@ -87,3 +87,6 @@ d:\prg\DrCost2\DrCost2\obj\release\net6.0-windows\DrCost2.views.Employment.EmplP
 d:\prg\DrCost2\DrCost2\obj\release\net6.0-windows\DrCost2.views.Employment.EmplPaymentSourceSelectorForm.resources
 d:\prg\DrCost2\DrCost2\obj\release\net6.0-windows\DrCost2.views.InputStringForm.resources
 d:\prg\DrCost2\DrCost2\obj\release\net6.0-windows\DrCost2.views.PartitionManagerForm.resources
+d:\prg\DrCost2\DrCost2\obj\release\net6.0-windows\DrCost2.CashReceipts.CashReceiptCreatorForm.resources
+d:\prg\DrCost2\DrCost2\obj\release\net6.0-windows\DrCost2.CashReceipts.CashReceiptPaymentInputForm.resources
+d:\prg\DrCost2\DrCost2\obj\release\net6.0-windows\DrCost2.CashReceipts.CashReceiptsMainForm.resources

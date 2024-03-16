@@ -13,9 +13,10 @@ namespace DrCost2.CashReceipts
 		public decimal price { get; set; }
 		public decimal count { get; set; }
 		public decimal sum => price * count;
-		public DateTime DateTime { get; set; }
+		//public DateTime DateTime { get; set; }
 		public int budgetId { get; set; }
-		public string? name => paymentSample.name;
-		public string? category => paymentSample.category.name;
+		public string? name => paymentSample == null ? string.Empty : paymentSample.name;
+		public string? category => paymentSample == null ? string.Empty : paymentSample.category.name;
+		public string budgetName { get; set; }
 	}
 }

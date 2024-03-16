@@ -10,6 +10,6 @@ namespace DrCost2.CashReceipts
 	public interface ICashReceiptPaymentInputView
 	{
 		void ShowModal();
-		event EventHandler<EnteredPaymentDto> Completed;
+		event EventHandler<EnteredCashReceiptPaymentDto> Completed;
 	}
 }

@@ -10,39 +10,39 @@ using System.Threading.Tasks;
 
 namespace SQLiteRepo.Employment
 {
-	public class EmploymentDocRepoSQLite : IEmploymentDocRepo
+	public class EmplMonthDocRepoSQLite : IEmplMonthDocRepo
 	{
 		private readonly AppData db;
 
-		public EmploymentDocRepoSQLite(AppData db)
+		public EmplMonthDocRepoSQLite(AppData db)
 		{
 			this.db = db;
 		}
 
-		public PaymentMainDoc? Create(string uname)
+		public EmplMonthDoc? Create(string uname)
 		{
-			if(db.PaymentMainDocs.Any(x => x.uname.Equals(uname)))
+			if(db.EmplMonthDocs.Any(x => x.uname.Equals(uname)))
 				return null;
 
-			var doc = new PaymentMainDocDb
+			var doc = new EmplMonthDocDb
 			{
 				uname = uname
 			};
 
-			db.PaymentMainDocs.Add(doc);
+			db.EmplMonthDocs.Add(doc);
 
 			db.SaveChanges();
 
-			return new PaymentMainDoc
+			return new EmplMonthDoc
 			{
 				uname = doc.uname,
 				id = doc.id
 			};
 		}
 
-		public PaymentMainDoc? Get(string uname)
+		public EmplMonthDoc? Get(string uname)
 		{
-			var docDb = db.PaymentMainDocs.FirstOrDefault(doc => doc.uname.Equals(uname));
+			var docDb = db.EmplMonthDocs.FirstOrDefault(doc => doc.uname.Equals(uname));
 
 			if (docDb == null) return null;
 
@@ -52,7 +52,7 @@ namespace SQLiteRepo.Employment
 				.Where(empl => empl.payDocId == docDb.id)
 				.ToArray();
 
-			var doc = new PaymentMainDoc
+			var doc = new EmplMonthDoc
 			{
 				id = docDb.id,
 				uname = docDb.uname

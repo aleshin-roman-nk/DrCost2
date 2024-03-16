@@ -1,6 +1,7 @@
 
 using Core.entity;
 using Core.services;
+using DrCost2.CashReceipts;
 using DrCost2.Helpers;
 using DrCost2.UIEntities;
 using DrCost2.views;
@@ -13,8 +14,9 @@ namespace DrCost2
 	{
 		private readonly IBudgetView budgetView;
 		private readonly ICreateBudgetView createBudgetView;
-		private readonly IEmploymentDocView employmentDocView;
+		private readonly IEmplMonthDocView employmentDocView;
 		private readonly IPartitionManagerView partitionManagerView;
+		private readonly ICashReceiptsMainView cashReceiptsMainView;
 		private readonly MonthsProvider monthsProvider;
 		private readonly BudgetService budgetService;
 		BindingSource bsBudgets = new BindingSource();
@@ -24,8 +26,9 @@ namespace DrCost2
 		public MainForm(
 			IBudgetView budgetView,
 			ICreateBudgetView createBudgetView,
-			IEmploymentDocView employmentDocView,
+			IEmplMonthDocView employmentDocView,
 			IPartitionManagerView partitionManagerView,
+			ICashReceiptsMainView cashReceiptsMainView,
 			MonthsProvider monthsProvider,
 			BudgetService budgetService
 			)
@@ -35,6 +38,7 @@ namespace DrCost2
 			this.createBudgetView = createBudgetView;
 			this.employmentDocView = employmentDocView;
 			this.partitionManagerView = partitionManagerView;
+			this.cashReceiptsMainView = cashReceiptsMainView;
 			this.monthsProvider = monthsProvider;
 			this.budgetService = budgetService;
 
@@ -43,6 +47,8 @@ namespace DrCost2
 
 			this.budgetView.BudgetStateChange += BudgetView_BudgetStateChange;
 
+			cashReceiptsMainView.PaymentsChanged += CashReceiptsMainView_PaymentsChanged;
+
 			gridBudgets.AutoGenerateColumns = false;
 
 			cbMonths.DataSource = monthsProvider.Months;
@@ -50,6 +56,11 @@ namespace DrCost2
 
 			setCurrentYearAndMonth();
 
+			updateData();
+		}
+
+		private void CashReceiptsMainView_PaymentsChanged(object? sender, EventArgs e)
+		{
 			updateData();
 		}
 
@@ -146,6 +157,11 @@ namespace DrCost2
 		private void btnPartitionManagerStart_Click(object sender, EventArgs e)
 		{
 			partitionManagerView.ShowModal();
+		}
+
+		private void btnCashReceipts_Click(object sender, EventArgs e)
+		{
+			cashReceiptsMainView.ShowModal();
 		}
 	}
 }

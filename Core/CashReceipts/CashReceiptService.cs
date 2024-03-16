@@ -16,9 +16,9 @@ namespace Core.CashReceipts
 			this.cashReceiptRepo = cashReceiptRepo;
 		}
 
-		public IEnumerable<CashReceipt> GetAll()
+		public IEnumerable<CashReceipt> GetAll(int year, int month)
 		{
-			return cashReceiptRepo.GetAll();
+			return cashReceiptRepo.GetAll(year, month);
 		}
 
 		public CashReceipt Create(CreateCashReceiptDto dto)

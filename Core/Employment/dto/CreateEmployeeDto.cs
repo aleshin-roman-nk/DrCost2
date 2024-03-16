@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.Employment.repos
+namespace Core.Employment.dto
 {
-	public interface IEmploymentDocRepo
+	public class CreateEmployeeDto
 	{
-		PaymentMainDoc? Get(string uname);
-		PaymentMainDoc? Create(string uname);
+		public int documentId {  get; set; }
+		public EmployeeSource? source { get; set; }
 	}
 }

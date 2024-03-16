@@ -75,5 +75,16 @@ namespace SQLiteRepo
 
 			return budgets;
 		}
+
+		public IEnumerable<BudgetTitleName> GetBudgetTitleNames()
+		{
+			return db.Budgets
+				.Select(b => new BudgetTitleName
+				{
+					id = b.id,
+					name = b.name
+				})
+				.ToArray();
+		}
 	}
 }

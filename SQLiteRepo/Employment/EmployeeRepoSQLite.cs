@@ -1,4 +1,5 @@
-﻿using Core.Employment.entity;
+﻿using Core.Employment.dto;
+using Core.Employment.entity;
 using Core.Employment.repos;
 using SQLiteRepo.Employment.ent;
 using System;
@@ -17,6 +18,32 @@ namespace SQLiteRepo.Employment
 		{
 			this.db = db;
 		}
+
+		public Employee Create(CreateEmployeeDto es)
+		{
+			var newEmpl = new EmployeeDb
+			{
+				cash = es.source.cash,
+				employeeSourceId = es.source.id,
+				name = es.source.name,
+				payDocId = es.documentId
+			};
+
+			db.Employees.Add(newEmpl);
+			db.SaveChanges();
+
+			var res = new Employee
+			{
+				id = newEmpl.id,
+				name = newEmpl.name,
+				cash = newEmpl.cash,
+				employeeSourceId = newEmpl.employeeSourceId,
+				payDocId = newEmpl.payDocId
+			};
+
+			return res;
+		}
+
 		public IEnumerable<Employee> CreateRange(IEnumerable<Employee> employees)
 		{
 			var employeesDb = employees
@@ -41,9 +68,24 @@ namespace SQLiteRepo.Employment
 						name = eDb.name,
 						id = eDb.id,
 						payDocId = eDb.payDocId,
-						Payments = new List<EmplPayment>().ToArray()
+						Payments = new List<EmplPayment>()
 					})
 					.ToArray();
+		}
+
+		public IEnumerable<Employee> Get(int documentId)
+		{
+			return db.Employees
+				.Where(x => x.payDocId == documentId)
+				.Select(x => new Employee
+				{
+					cash = x.cash,
+					employeeSourceId = x.employeeSourceId,
+					payDocId = x.payDocId,
+					id = x.id,
+					name = x.name
+				})
+				.ToArray();
 		}
 	}
 }

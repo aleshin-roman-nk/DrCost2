@@ -12,7 +12,7 @@ namespace Core.Employment.entity
 		public int employeeSourceId { get; set; }
 		public int payDocId { get; set; }
 		public string? name { get; set; }
-		public IEnumerable<EmplPayment>? Payments { get; set; } = new List<EmplPayment>();
+		public List<EmplPayment>? Payments { get; set; } = new List<EmplPayment>();
 		public bool cash { get; set; }
 		public decimal sum => Payments == null ? 0 : Payments.Sum(x => x.sum);
 	}

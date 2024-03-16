@@ -1,6 +1,7 @@
 ﻿using Core.Employment.entity;
 using Core.entity;
 using Microsoft.EntityFrameworkCore;
+using SQLiteRepo.CashReceipts;
 using SQLiteRepo.Employment.ent;
 using SQLiteRepo.ent;
 using System;
@@ -42,7 +43,7 @@ namespace SQLiteRepo
 				.HasForeignKey(p => p.employeeId);
 
 			//PaymentMainDocDb
-			modelBuilder.Entity<PaymentMainDocDb>()
+			modelBuilder.Entity<EmplMonthDocDb>()
 				.HasMany(d => d.Employees)
 				.WithOne()
 				.HasForeignKey(e => e.payDocId);
@@ -55,6 +56,11 @@ namespace SQLiteRepo
 
 			//modelBuilder.Entity<PaymentCategory>()
 			//	.ToTable("PaymentCategories");
+
+			modelBuilder.Entity<CashReceiptDb>()
+				.HasMany(cr => cr.Payments)
+				.WithOne()
+				.HasForeignKey(p => p.cashReceiptId);
 		}
 
 		public DbSet<PaymentCategory> PaymentCategories { get; set; }
@@ -64,11 +70,12 @@ namespace SQLiteRepo
 		public DbSet<FindingTagDb> FindingTags { get; set; }
 		public DbSet<BudgetDb> Budgets { get; set; }
 
-		public DbSet<PaymentMainDocDb> PaymentMainDocs { get; set; }
+		public DbSet<EmplMonthDocDb> EmplMonthDocs { get; set; }
 		public DbSet<EmployeeDb> Employees { get; set; }
 		public DbSet<EmployeeSourceDb> EmployeeSources { get; set; }
 		public DbSet<EmplPaymentTag> EmplPaymentTags { get; set; }
 		public DbSet<EmplPaymentSource> EmplPaymentSources { get; set; }
 		public DbSet<EmplPaymentDb> EmplPayments { get; set; }
+		public DbSet<CashReceiptDb> CashReceipts { get; set; }
 	}
 }

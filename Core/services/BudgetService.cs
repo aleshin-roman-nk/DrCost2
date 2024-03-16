@@ -30,5 +30,10 @@ namespace Core.services
 		{
 			return budgetRepo.Create(createBudgetDto);
 		}
+
+		public IEnumerable<BudgetTitleName> GetBudgetTitleNames()
+		{
+			return budgetRepo.GetBudgetTitleNames();
+		}
 	}
 }

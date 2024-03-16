@@ -9,6 +9,6 @@ namespace Core.Employment.repos
 {
 	public interface IEmployeeSourceRepo
 	{
-		IEnumerable<EmployeeSource> GetAll();
+		IEnumerable<EmployeeSource> GetAllActive();
 	}
 }

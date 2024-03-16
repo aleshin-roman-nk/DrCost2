@@ -19,7 +19,8 @@ namespace SQLiteRepo.ent
         public decimal count { get; set; }
         public DateTime Date { get; set; }
         //public PaymentCategoryDb category { get; set; }
-        public PaymentCategory category { get; set; }
+        public PaymentCategory? category { get; set; }
         public int paymentSampleId { get; set; }
+		public int? cashReceiptId { get; set; }
 	}
 }

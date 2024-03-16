@@ -98,6 +98,7 @@ namespace DrCost2.views
 					categoryName = g.Key,
 					summ = g.Sum(p => p.sum)
 				})
+				.OrderByDescending(p => p.summ)
 				.ToList();
 
 			return groupedPayments;

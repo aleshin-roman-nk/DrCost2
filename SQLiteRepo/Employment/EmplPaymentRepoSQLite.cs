@@ -3,9 +3,11 @@ using Core.Employment.repos;
 using SQLiteRepo.Employment.ent;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace SQLiteRepo.Employment
 {
@@ -50,6 +52,29 @@ namespace SQLiteRepo.Employment
 			};
 
 			return res;
+		}
+
+		public bool Delete(EmplPayment payment)
+		{
+			var o = db.EmplPayments.FirstOrDefault(x => x.id == payment.id);
+			if (o == null) return false;
+
+            db.EmplPayments.Remove(o);
+			return db.SaveChanges() > 0;
+		}
+
+		public bool Update(EmplPayment payment)
+		{
+			var pToUpdate = db.EmplPayments.FirstOrDefault(x => x.id == payment.id);
+
+			if (pToUpdate == null) return false;
+
+			pToUpdate.amount = payment.amount;
+			pToUpdate.completed = payment.completed;
+			pToUpdate.description = payment.description;
+			pToUpdate.price = payment.price;
+
+			return db.SaveChanges() > 0;
 		}
 	}
 }

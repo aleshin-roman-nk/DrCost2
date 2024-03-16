@@ -29,17 +29,18 @@
 		private void InitializeComponent()
 		{
 			components = new System.ComponentModel.Container();
-			DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-			DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+			DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+			DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
 			btnCreateBudget = new Button();
 			numericYear = new NumericUpDown();
 			cbMonths = new ComboBox();
 			gridBudgets = new DataGridView();
+			nameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+			paymentTotalOfMonthDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
 			budgetTitleBindingSource = new BindingSource(components);
 			btnGoEmployees = new Button();
 			btnPartitionManagerStart = new Button();
-			nameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-			paymentTotalOfMonthDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+			btnCashReceipts = new Button();
 			((System.ComponentModel.ISupportInitialize)numericYear).BeginInit();
 			((System.ComponentModel.ISupportInitialize)gridBudgets).BeginInit();
 			((System.ComponentModel.ISupportInitialize)budgetTitleBindingSource).BeginInit();
@@ -96,6 +97,29 @@
 			gridBudgets.CellMouseDoubleClick += gridBudgets_CellMouseDoubleClick;
 			gridBudgets.KeyDown += gridBudgets_KeyDown;
 			// 
+			// nameDataGridViewTextBoxColumn
+			// 
+			nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+			dataGridViewCellStyle3.NullValue = null;
+			nameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+			nameDataGridViewTextBoxColumn.HeaderText = "Budget name";
+			nameDataGridViewTextBoxColumn.MinimumWidth = 6;
+			nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+			nameDataGridViewTextBoxColumn.ReadOnly = true;
+			nameDataGridViewTextBoxColumn.Width = 400;
+			// 
+			// paymentTotalOfMonthDataGridViewTextBoxColumn
+			// 
+			paymentTotalOfMonthDataGridViewTextBoxColumn.DataPropertyName = "paymentTotalOfMonth";
+			dataGridViewCellStyle4.Format = "C2";
+			dataGridViewCellStyle4.NullValue = null;
+			paymentTotalOfMonthDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+			paymentTotalOfMonthDataGridViewTextBoxColumn.HeaderText = "Budget total";
+			paymentTotalOfMonthDataGridViewTextBoxColumn.MinimumWidth = 6;
+			paymentTotalOfMonthDataGridViewTextBoxColumn.Name = "paymentTotalOfMonthDataGridViewTextBoxColumn";
+			paymentTotalOfMonthDataGridViewTextBoxColumn.ReadOnly = true;
+			paymentTotalOfMonthDataGridViewTextBoxColumn.Width = 150;
+			// 
 			// budgetTitleBindingSource
 			// 
 			budgetTitleBindingSource.DataSource = typeof(Core.entity.BudgetTitle);
@@ -121,34 +145,22 @@
 			btnPartitionManagerStart.UseVisualStyleBackColor = true;
 			btnPartitionManagerStart.Click += btnPartitionManagerStart_Click;
 			// 
-			// nameDataGridViewTextBoxColumn
+			// btnCashReceipts
 			// 
-			nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-			dataGridViewCellStyle1.NullValue = null;
-			nameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-			nameDataGridViewTextBoxColumn.HeaderText = "Budget name";
-			nameDataGridViewTextBoxColumn.MinimumWidth = 6;
-			nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-			nameDataGridViewTextBoxColumn.ReadOnly = true;
-			nameDataGridViewTextBoxColumn.Width = 400;
-			// 
-			// paymentTotalOfMonthDataGridViewTextBoxColumn
-			// 
-			paymentTotalOfMonthDataGridViewTextBoxColumn.DataPropertyName = "paymentTotalOfMonth";
-			dataGridViewCellStyle2.Format = "C2";
-			dataGridViewCellStyle2.NullValue = null;
-			paymentTotalOfMonthDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
-			paymentTotalOfMonthDataGridViewTextBoxColumn.HeaderText = "Budget total";
-			paymentTotalOfMonthDataGridViewTextBoxColumn.MinimumWidth = 6;
-			paymentTotalOfMonthDataGridViewTextBoxColumn.Name = "paymentTotalOfMonthDataGridViewTextBoxColumn";
-			paymentTotalOfMonthDataGridViewTextBoxColumn.ReadOnly = true;
-			paymentTotalOfMonthDataGridViewTextBoxColumn.Width = 150;
+			btnCashReceipts.Location = new Point(411, 538);
+			btnCashReceipts.Name = "btnCashReceipts";
+			btnCashReceipts.Size = new Size(208, 41);
+			btnCashReceipts.TabIndex = 14;
+			btnCashReceipts.Text = "cash receipts";
+			btnCashReceipts.UseVisualStyleBackColor = true;
+			btnCashReceipts.Click += btnCashReceipts_Click;
 			// 
 			// MainForm
 			// 
 			AutoScaleDimensions = new SizeF(11F, 28F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(1100, 592);
+			Controls.Add(btnCashReceipts);
 			Controls.Add(btnPartitionManagerStart);
 			Controls.Add(btnGoEmployees);
 			Controls.Add(gridBudgets);
@@ -176,5 +188,6 @@
 		private Button btnPartitionManagerStart;
 		private DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
 		private DataGridViewTextBoxColumn paymentTotalOfMonthDataGridViewTextBoxColumn;
+		private Button btnCashReceipts;
 	}
 }
