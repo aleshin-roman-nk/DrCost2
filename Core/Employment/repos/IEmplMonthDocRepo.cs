@@ -11,5 +11,6 @@ namespace Core.Employment.repos
 	{
 		EmplMonthDoc? Get(string uname);
 		EmplMonthDoc? Create(string uname);
+		EmplMonthDoc? Clone(string unameFrom, string unameTo);
 	}
 }

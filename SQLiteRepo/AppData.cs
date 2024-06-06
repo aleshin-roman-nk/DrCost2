@@ -40,7 +40,8 @@ namespace SQLiteRepo
 			modelBuilder.Entity<EmployeeDb>()
 				.HasMany(p => p.Payments)
 				.WithOne()
-				.HasForeignKey(p => p.employeeId);
+				.HasForeignKey(p => p.employeeId)
+				.OnDelete(DeleteBehavior.Cascade);
 
 			//PaymentMainDocDb
 			modelBuilder.Entity<EmplMonthDocDb>()

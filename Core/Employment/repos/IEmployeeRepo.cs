@@ -13,5 +13,6 @@ namespace Core.Employment.repos
 		IEnumerable<Employee> CreateRange(IEnumerable<Employee> employees);
 		IEnumerable<Employee> Get(int document);
 		Employee Create(CreateEmployeeDto es);
+		bool Delete(Employee employee);
 	}
 }

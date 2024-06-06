@@ -21,7 +21,16 @@ namespace DrCost2.views.Employment
 		BindingSource bsEmployees = new BindingSource();
 		BindingSource bsPayments = new BindingSource();
 
-		Employee? curentEmployee => bsEmployees.Current as Employee;
+		Employee? curentEmployee
+		{
+			get
+			{
+				if (bsEmployees.CurrencyManager.Position < bsEmployees.Count)
+					return bsEmployees.Current as Employee;
+				else return null;
+			}
+		}
+			
 		EmplPayment? currentEmplPayment => bsPayments.Current as EmplPayment;
 
 		DateTime currentDate;
@@ -159,6 +168,7 @@ namespace DrCost2.views.Employment
 				btnAddEmpl.Enabled = false;
 				btnAddPayment.Enabled = false;
 				btnAddAllEmployees.Enabled = false;
+				btnCloneDocumentImage.Enabled = false;
 				lblDocName.Text = "-none-";
 				lblTotalSum.Text = "-";
 				lblFotTotal.Text = "-";
@@ -173,6 +183,7 @@ namespace DrCost2.views.Employment
 				btnAddEmpl.Enabled = true;
 				btnAddPayment.Enabled = true;
 				btnAddAllEmployees.Enabled = true;
+				btnCloneDocumentImage.Enabled = true;
 				lblDocName.Text = doc.uname;
 				lblTotalSum.Text = doc.total.ToString("c");
 				lblFotTotal.Text = doc.fot.ToString("c");
@@ -204,7 +215,7 @@ namespace DrCost2.views.Employment
 			{
 				if (employees.Count() > 0)
 				{
-					bsEmployees.DataSource = employees;
+					bsEmployees.DataSource = employees.OrderBy(x => x.name);
 					gridEmployees.DataSource = bsEmployees;
 				}
 			}
@@ -222,35 +233,47 @@ namespace DrCost2.views.Employment
 			if (dt.Year == currentDate.Year && dt.Month == currentDate.Month) return;
 
 			this.emplMonthDocService.loadDocument(dt.Year, dt.Month);
+
+			currentDate = dt;
 		}
 
 		private void gridEmplPayment_KeyDown(object sender, KeyEventArgs e)
 		{
-			var empl = curentEmployee;
-			var pay = currentEmplPayment;
-
-			if (empl == null) return;
-			if (pay == null) return;
-
-			var c = MessageBox.Show($"Are you sure to delete payment {pay.name}?",
-				"Confirm", MessageBoxButtons.YesNo);
-
-			if (c == DialogResult.Yes)
+			if (Keys.Delete == e.KeyCode)
 			{
-				emplMonthDocService.DeleteEmplPayment(pay);
+				var empl = curentEmployee;
+				var pay = currentEmplPayment;
+
+				if (empl == null) return;
+				if (pay == null) return;
+
+				var c = MessageBox.Show($"Are you sure to delete payment {pay.name}?",
+					"Confirm", MessageBoxButtons.YesNo);
+
+				if (c == DialogResult.Yes)
+				{
+					emplMonthDocService.DeleteEmplPayment(pay);
+				}
+
+				e.Handled = true;
+			}
+			else if (Keys.Enter == e.KeyCode)
+			{
+				if (currentEmplPayment == null) return;
+
+				emplPaymentEditorView.ShowModal(currentEmplPayment);
+
+				e.Handled = true;
 			}
 		}
 
 		private void EmplPaymentEditorView_Completed(object? sender, EmplPayment e)
 		{
 			if (e.id == 0)
-			{
 				emplMonthDocService.CreateEmplPayment(e);
-			}
 			else
-			{
 				emplMonthDocService.UpdateEmplPayment(e);
-			}
+
 		}
 
 		private void gridEmplPayment_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -258,6 +281,28 @@ namespace DrCost2.views.Employment
 			if (currentEmplPayment == null) return;
 
 			emplPaymentEditorView.ShowModal(currentEmplPayment);
+		}
+
+		private void btnCloneDocumentImage_Click(object sender, EventArgs e)
+		{
+			var dtDest = dateTimePicker1.Value;
+			var dtSrc = dtDest.AddMonths(-1);
+
+			emplMonthDocService.CloneLastDocumentInto(dtSrc.Year, dtSrc.Month, dtDest.Year, dtDest.Month);
+		}
+
+		private void gridEmployees_KeyDown(object sender, KeyEventArgs e)
+		{
+			if(Keys.Delete == e.KeyCode)
+			{
+				if(curentEmployee == null) return;
+				var ok = MessageBox.Show($"Are you sure to delete {curentEmployee.name}", "Deleting", MessageBoxButtons.YesNo);
+				if(ok != DialogResult.Yes) return;
+
+				emplMonthDocService.DeleteEmployee(curentEmployee);
+
+				e.Handled = true;
+			}
 		}
 	}
 }

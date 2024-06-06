@@ -84,9 +84,13 @@ namespace Core.Employment.services
 
 			var newEmpls = employeeRepo.CreateRange(employees);
 
-			existingEmpls.AddRange(newEmpls);
+			//existingEmpls.AddRange(newEmpls);
 
-			_emplMonthDoc.Employees = existingEmpls.ToArray();
+			// не знаю почему у существующего employee теряется Payments
+			// нет времени копаться
+			_emplMonthDoc.Employees = employeeRepo.Get(_emplMonthDoc.id).ToList();
+
+			//_emplMonthDoc.Employees = existingEmpls;
 
 			updateEmplMonthDocTotals();
 			OnEmplMonthDocChanged?.Invoke(this, _emplMonthDoc);
@@ -142,6 +146,8 @@ namespace Core.Employment.services
 			// in-memory delete
 			var p = empl.Payments?.FirstOrDefault(e => e.id == payment.id);
 
+			if(p == null) return;
+
 			empl.Payments?.Remove(p);
 
 			updateEmplMonthDocTotals();
@@ -168,6 +174,32 @@ namespace Core.Employment.services
 
 			updateEmplMonthDocTotals();
 			OnEmplMonthDocChanged?.Invoke(this, _emplMonthDoc);
+		}
+
+		public void CloneLastDocumentInto(int fromYear, int fromMonth, int toYear, int toMonth)
+		{
+			var r = employmentDocRepo.Clone($"{fromYear}.{fromMonth}", $"{toYear}.{toMonth}");
+
+			if(r != null)
+			{
+				_emplMonthDoc = r;
+				OnEmplMonthDocChanged?.Invoke(this, _emplMonthDoc);
+			}
+		}
+
+		public void DeleteEmployee(Employee employee)
+		{
+			if (_emplMonthDoc == null) return;
+
+			var e = _emplMonthDoc.Employees.FirstOrDefault(x => x.id == employee.id);
+
+			if(e == null) return;
+
+			if (employeeRepo.Delete(e))
+			{
+				_emplMonthDoc.Employees.Remove(e);
+				OnEmplMonthDocChanged?.Invoke(this, _emplMonthDoc);
+			}
 		}
 
 		private void updateEmplMonthDocTotals()

@@ -58,6 +58,7 @@
 			btnCreateDocument = new Button();
 			btnAddPayment = new Button();
 			btnAddAllEmployees = new Button();
+			btnCloneDocumentImage = new Button();
 			((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
 			splitContainer1.Panel1.SuspendLayout();
 			splitContainer1.Panel2.SuspendLayout();
@@ -76,7 +77,7 @@
 			lblDocName.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
 			lblDocName.Location = new Point(12, 9);
 			lblDocName.Name = "lblDocName";
-			lblDocName.Size = new Size(121, 31);
+			lblDocName.Size = new Size(102, 25);
 			lblDocName.TabIndex = 0;
 			lblDocName.Text = "doc-name";
 			// 
@@ -118,6 +119,7 @@
 			gridEmployees.ShowCellToolTips = false;
 			gridEmployees.Size = new Size(580, 557);
 			gridEmployees.TabIndex = 0;
+			gridEmployees.KeyDown += gridEmployees_KeyDown;
 			// 
 			// nameDataGridViewTextBoxColumn
 			// 
@@ -255,7 +257,7 @@
 			txtCurrentEmployee.Location = new Point(0, 0);
 			txtCurrentEmployee.Name = "txtCurrentEmployee";
 			txtCurrentEmployee.ReadOnly = true;
-			txtCurrentEmployee.Size = new Size(712, 34);
+			txtCurrentEmployee.Size = new Size(712, 29);
 			txtCurrentEmployee.TabIndex = 1;
 			// 
 			// lblTotalSum
@@ -264,7 +266,7 @@
 			lblTotalSum.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
 			lblTotalSum.Location = new Point(12, 40);
 			lblTotalSum.Name = "lblTotalSum";
-			lblTotalSum.Size = new Size(119, 31);
+			lblTotalSum.Size = new Size(98, 25);
 			lblTotalSum.TabIndex = 2;
 			lblTotalSum.Text = "total-sum";
 			// 
@@ -272,7 +274,7 @@
 			// 
 			dateTimePicker1.Location = new Point(12, 74);
 			dateTimePicker1.Name = "dateTimePicker1";
-			dateTimePicker1.Size = new Size(250, 34);
+			dateTimePicker1.Size = new Size(250, 29);
 			dateTimePicker1.TabIndex = 3;
 			dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
 			// 
@@ -282,7 +284,7 @@
 			lblFotTotal.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
 			lblFotTotal.Location = new Point(268, 77);
 			lblFotTotal.Name = "lblFotTotal";
-			lblFotTotal.Size = new Size(132, 28);
+			lblFotTotal.Size = new Size(107, 21);
 			lblFotTotal.TabIndex = 4;
 			lblFotTotal.Text = "ФОТ: 475 000";
 			// 
@@ -292,7 +294,7 @@
 			lblOpsTotal.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
 			lblOpsTotal.Location = new Point(418, 79);
 			lblOpsTotal.Name = "lblOpsTotal";
-			lblOpsTotal.Size = new Size(122, 28);
+			lblOpsTotal.Size = new Size(95, 21);
 			lblOpsTotal.TabIndex = 5;
 			lblOpsTotal.Text = "ОПС: ХХХХХ";
 			// 
@@ -302,16 +304,16 @@
 			lblKhozTotal.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
 			lblKhozTotal.Location = new Point(586, 79);
 			lblKhozTotal.Name = "lblKhozTotal";
-			lblKhozTotal.Size = new Size(119, 28);
+			lblKhozTotal.Size = new Size(92, 21);
 			lblKhozTotal.TabIndex = 6;
 			lblKhozTotal.Text = "ХОЗ: ХХХХХ";
 			// 
 			// btnAddEmpl
 			// 
 			btnAddEmpl.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-			btnAddEmpl.Location = new Point(988, 12);
+			btnAddEmpl.Location = new Point(1093, 12);
 			btnAddEmpl.Name = "btnAddEmpl";
-			btnAddEmpl.Size = new Size(154, 45);
+			btnAddEmpl.Size = new Size(123, 45);
 			btnAddEmpl.TabIndex = 7;
 			btnAddEmpl.Text = "+ работник";
 			btnAddEmpl.UseVisualStyleBackColor = true;
@@ -320,9 +322,9 @@
 			// btnCreateDocument
 			// 
 			btnCreateDocument.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-			btnCreateDocument.Location = new Point(668, 12);
+			btnCreateDocument.Location = new Point(775, 12);
 			btnCreateDocument.Name = "btnCreateDocument";
-			btnCreateDocument.Size = new Size(154, 45);
+			btnCreateDocument.Size = new Size(83, 45);
 			btnCreateDocument.TabIndex = 8;
 			btnCreateDocument.Text = "+ док";
 			btnCreateDocument.UseVisualStyleBackColor = true;
@@ -331,9 +333,9 @@
 			// btnAddPayment
 			// 
 			btnAddPayment.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-			btnAddPayment.Location = new Point(1148, 12);
+			btnAddPayment.Location = new Point(1222, 12);
 			btnAddPayment.Name = "btnAddPayment";
-			btnAddPayment.Size = new Size(154, 45);
+			btnAddPayment.Size = new Size(80, 45);
 			btnAddPayment.TabIndex = 9;
 			btnAddPayment.Text = "+ плат";
 			btnAddPayment.UseVisualStyleBackColor = true;
@@ -342,7 +344,7 @@
 			// btnAddAllEmployees
 			// 
 			btnAddAllEmployees.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-			btnAddAllEmployees.Location = new Point(828, 12);
+			btnAddAllEmployees.Location = new Point(933, 12);
 			btnAddAllEmployees.Name = "btnAddAllEmployees";
 			btnAddAllEmployees.Size = new Size(154, 45);
 			btnAddAllEmployees.TabIndex = 10;
@@ -350,11 +352,23 @@
 			btnAddAllEmployees.UseVisualStyleBackColor = true;
 			btnAddAllEmployees.Click += btnAddAllEmployees_Click;
 			// 
+			// btnCloneDocumentImage
+			// 
+			btnCloneDocumentImage.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+			btnCloneDocumentImage.Location = new Point(864, 12);
+			btnCloneDocumentImage.Name = "btnCloneDocumentImage";
+			btnCloneDocumentImage.Size = new Size(63, 45);
+			btnCloneDocumentImage.TabIndex = 11;
+			btnCloneDocumentImage.Text = "клон";
+			btnCloneDocumentImage.UseVisualStyleBackColor = true;
+			btnCloneDocumentImage.Click += btnCloneDocumentImage_Click;
+			// 
 			// EmplMonthDocForm
 			// 
-			AutoScaleDimensions = new SizeF(11F, 28F);
+			AutoScaleDimensions = new SizeF(9F, 21F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(1314, 683);
+			Controls.Add(btnCloneDocumentImage);
 			Controls.Add(btnAddAllEmployees);
 			Controls.Add(btnAddPayment);
 			Controls.Add(btnCreateDocument);
@@ -415,5 +429,6 @@
 		private DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn;
 		private DataGridViewTextBoxColumn sumDataGridViewTextBoxColumn1;
 		private DataGridViewTextBoxColumn tagNameDataGridViewTextBoxColumn;
+		private Button btnCloneDocumentImage;
 	}
 }

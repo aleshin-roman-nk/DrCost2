@@ -15,7 +15,7 @@ namespace SQLiteRepo.Employment.ent
 		public int employeeSourceId { get; set; }
 		public int payDocId { get; set; }
 		public string? name { get; set; }
-		public IEnumerable<EmplPaymentDb> Payments { get; set; } = new List<EmplPaymentDb>();
+		public ICollection<EmplPaymentDb> Payments { get; set; } = new List<EmplPaymentDb>();
 		public bool cash { get; set; }
 	}
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MockRepo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8cdbb5e986dfbbe17f261aa74afd53effb33189")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90477e32d6f669408529b3a03f3037a7021357fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("MockRepo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MockRepo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

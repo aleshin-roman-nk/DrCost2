@@ -1,6 +1,7 @@
 ﻿using Core.Employment.dto;
 using Core.Employment.entity;
 using Core.Employment.repos;
+using Microsoft.EntityFrameworkCore;
 using SQLiteRepo.Employment.ent;
 using System;
 using System.Collections.Generic;
@@ -73,9 +74,23 @@ namespace SQLiteRepo.Employment
 					.ToArray();
 		}
 
+		public bool Delete(Employee employee)
+		{
+			var e = db.Employees.FirstOrDefault(x => x.id == employee.id);
+            if (e != null)
+            {
+                db.Employees.Remove(e);
+				return db.SaveChanges() > 0;
+            }
+
+			return false;
+        }
+
 		public IEnumerable<Employee> Get(int documentId)
 		{
 			return db.Employees
+				.Include(x => x.Payments)
+				.ThenInclude(x => x.EmplPaymentTag)
 				.Where(x => x.payDocId == documentId)
 				.Select(x => new Employee
 				{
@@ -83,7 +98,20 @@ namespace SQLiteRepo.Employment
 					employeeSourceId = x.employeeSourceId,
 					payDocId = x.payDocId,
 					id = x.id,
-					name = x.name
+					name = x.name,
+					Payments = x.Payments.Select(p => new EmplPayment
+					{
+						amount = p.amount,
+						completed = p.completed,
+						description = p.description,
+						employeeId = p.employeeId,
+						emplPaymentSourceId = p.emplPaymentSourceId,
+						id = p.id,
+						name = p.name,
+						price = p.price,
+						tagId = p.tagId,
+						tagName = p.EmplPaymentTag.name
+					}).ToList()
 				})
 				.ToArray();
 		}

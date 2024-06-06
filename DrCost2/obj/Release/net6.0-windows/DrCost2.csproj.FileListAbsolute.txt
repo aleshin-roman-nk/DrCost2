@@ -81,7 +81,6 @@ D:\prg\DrCost2\DrCost2\obj\Release\net6.0-windows\DrCost2.genruntimeconfig.cache
 D:\prg\DrCost2\DrCost2\obj\Release\net6.0-windows\ref\DrCost2.dll
 D:\prg\DrCost2\DrCost2\obj\Release\net6.0-windows\DrCost2.views.Employment.EmployeeSelectorForm.resources
 D:\prg\DrCost2\DrCost2\obj\Release\net6.0-windows\DrCost2.views.Employment.EmployeesSourceForm.resources
-D:\prg\DrCost2\DrCost2\obj\Release\net6.0-windows\DrCost2.views.Employment.EmploymentDocForm.resources
 D:\prg\DrCost2\DrCost2\obj\Release\net6.0-windows\DrCost2.views.PaymentsForm.resources
 d:\prg\DrCost2\DrCost2\obj\release\net6.0-windows\DrCost2.views.Employment.EmplPaymentEditorForm.resources
 d:\prg\DrCost2\DrCost2\obj\release\net6.0-windows\DrCost2.views.Employment.EmplPaymentSourceSelectorForm.resources
@@ -90,3 +89,4 @@ d:\prg\DrCost2\DrCost2\obj\release\net6.0-windows\DrCost2.views.PartitionManager
 d:\prg\DrCost2\DrCost2\obj\release\net6.0-windows\DrCost2.CashReceipts.CashReceiptCreatorForm.resources
 d:\prg\DrCost2\DrCost2\obj\release\net6.0-windows\DrCost2.CashReceipts.CashReceiptPaymentInputForm.resources
 d:\prg\DrCost2\DrCost2\obj\release\net6.0-windows\DrCost2.CashReceipts.CashReceiptsMainForm.resources
+d:\prg\DrCost2\DrCost2\obj\release\net6.0-windows\DrCost2.views.Employment.EmplMonthDocForm.resources

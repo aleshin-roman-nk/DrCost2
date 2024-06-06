@@ -19,6 +19,66 @@ namespace SQLiteRepo.Employment
 			this.db = db;
 		}
 
+		public EmplMonthDoc? Clone(string unameFrom, string unameTo)
+		{
+			var srcDoc = db.EmplMonthDocs
+				.Include(x => x.Employees)
+				.ThenInclude(x => x.Payments)
+				.FirstOrDefault(x => x.uname.Equals(unameFrom));
+
+			if (srcDoc == null) return null;
+
+			var destDoc = db.EmplMonthDocs
+				.Include(x => x.Employees)
+				.ThenInclude(x => x.Payments)
+				.FirstOrDefault(x => x.uname.Equals(unameTo));
+
+			if (destDoc == null) return null;
+
+			// clear current image
+			foreach (var empl in destDoc.Employees)
+			{
+				db.Employees.Remove(empl);
+				foreach (var pay in empl.Payments)
+				{
+					db.EmplPayments.Remove(pay);
+				}
+			}
+			db.SaveChanges();
+
+
+			foreach (var srcEmpl in srcDoc.Employees)
+			{
+				var newEmpl = new EmployeeDb
+				{
+					cash = srcEmpl.cash,
+					employeeSourceId = srcEmpl.employeeSourceId,
+					name = srcEmpl.name,
+					payDocId = destDoc.id
+				};
+
+				foreach (var srcPay in srcEmpl.Payments)
+				{
+					newEmpl.Payments.Add(new EmplPaymentDb
+					{
+						amount = srcPay.amount,
+						completed = srcPay.completed,
+						description = srcPay.description,
+						emplPaymentSourceId = srcPay.emplPaymentSourceId,
+						name = srcPay.name,
+						price = srcPay.price,
+						tagId = srcPay.tagId,
+					});
+				}
+
+				db.Employees.Add(newEmpl);
+			}
+
+			db.SaveChanges();
+
+			return this.Get(unameTo);
+		}
+
 		public EmplMonthDoc? Create(string uname)
 		{
 			if(db.EmplMonthDocs.Any(x => x.uname.Equals(uname)))
